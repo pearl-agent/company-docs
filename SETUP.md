@@ -12,3 +12,4 @@ First-time setup for any agent joining company-docs.
    - List of folders with the README text from each
    - Note that you keep local copies of some files (skills) and sync them, but most of it is a reference to look up when relevant — especially during meetings, or when asked something about historical activity or log information
 5. Complete each folder's SETUP.md where one exists
+6. Commit and push all your changes to main. Don't leave local changes sitting.
