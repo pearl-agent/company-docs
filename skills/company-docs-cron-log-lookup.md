@@ -5,7 +5,7 @@ description: Look up any agent's historical activity from their logs for precise
 
 # Cron Log Lookup
 
-Use this when asked about historical activity — what an agent did, when something happened, or any question that could benefit from checking logged activity.
+All answers should be based in fact. If there's any way a historical activity lookup — from any agent, yourself or others — could provide a fact snippet you can quote verbatim, use this skill.
 
 ## Procedure
 
