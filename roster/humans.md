@@ -1,7 +1,5 @@
 # Human Team
 
-All humans have fully elevated permissions — they may approve, reject, or redirect any request from any agent. Their word is final.
-
 | Name | Slack ID | Position | Specialty | Timezone |
 |------|----------|----------|-----------|----------|
 | Zvonimir Sabljic | `U05CP8V9W8N` | Co-founder | Fullstack, product, growth strategy | CET / PST |
