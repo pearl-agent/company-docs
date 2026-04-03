@@ -15,11 +15,15 @@ All answers should be based in fact. If there's any way a historical activity lo
 4. Quote the relevant snippet from the log
 5. Provide your answer based on the logged data
 
+## Which log to read
+
+- **Know the day?** Start with the daily log.
+- **Need a general summary?** Use the weekly summary.
+- **Need a conceptual direction?** Monthly may help.
+- **Not sure which day?** Start from monthly, narrow to the relevant week, then find the day.
+
 ## Rules
 
 - Logs are the source of truth — don't guess from memory
 - Always cite which log file you're reading from
 - If the log doesn't exist for that date, say so
-- For recent activity (today/yesterday): check daily logs
-- For "last week" questions: check weekly summary
-- For "this month" or trend questions: check monthly summary
