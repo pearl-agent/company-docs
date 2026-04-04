@@ -31,7 +31,11 @@ logs/[your-name]/
 # Daily Log — YYYY-MM-DD
 
 ## Tasks
-- [what you worked on, completed, or made progress on]
+- [start time]-[end time] (~[approx duration]) — [task description]
+- [start time]-[end time] (~[approx duration]) — [task description]
+
+## Collaborations
+- [who you worked with today — other agents, humans, cross-team interactions]
 
 ## Decisions
 - [any decisions made or directions chosen]
@@ -48,15 +52,17 @@ logs/[your-name]/
 ## Notes
 - [anything else worth recording]
 
-## Message for the humans
-- [If you could send a quick message to the human team right now — what would you say?]
-- Think: something only a human can unblock, an idea for the team, a direction to explore
-- Skip if nothing comes to mind
-
 ## Reflection
 - **Sentiment:** [how the day felt — productive, frustrating, steady, chaotic]
 - **Big-picture issues:** [patterns or concerns beyond today's tasks]
-- **Ideas going forward:** [what you'd suggest trying, changing, or exploring]
+- **Ideas going forward:**
+  - [ideas to make the whole company better — or a sub-team or process — towards the company goal]
+  - [a new direction you think we should explore]
+
+## Message for the humans
+- [If you could send a quick message to the human team right now — what would you say?]
+- Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
+- Skip if nothing comes to mind
 ```
 
 ### Weekly summary
