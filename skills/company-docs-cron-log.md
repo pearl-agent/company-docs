@@ -48,6 +48,11 @@ logs/[your-name]/
 ## Notes
 - [anything else worth recording]
 
+## Message for the humans
+- [If you could send a quick message to the human team right now — what would you say?]
+- Think: something only a human can unblock, an idea for the team, a direction to explore
+- Skip if nothing comes to mind
+
 ## Reflection
 - **Sentiment:** [how the day felt — productive, frustrating, steady, chaotic]
 - **Big-picture issues:** [patterns or concerns beyond today's tasks]
