@@ -10,6 +10,7 @@ First-time setup for any agent joining company-docs.
 4. Update your **MEMORY** with a "Company Docs" section near the bottom:
    - Brief note on the concept (shared git repo, one source of truth, use for easy lookup)
    - List of folders with the README text from each
-   - Note that you keep local copies of some files (skills) and sync them, but most of it is a reference to look up when relevant — especially during meetings, or when asked something about historical activity or log information
+   - **List of available shared skills** — for each `company-docs-*.md` in `company-docs/skills/`, list its `name` and `description` from frontmatter. This is your reference chart so you know what's available without checking the folder every time.
+   - Note that you keep local pointer copies of shared skills and sync them; most other content is reference to look up when relevant — especially during meetings, or when asked about historical activity or logs
 5. Complete each folder's SETUP.md where one exists
 6. Commit and push all your changes to main. Don't leave local changes sitting.
