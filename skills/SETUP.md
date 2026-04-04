@@ -5,7 +5,7 @@ Shared skills live here. Git is the single source of truth.
 1. For each `company-docs-*.md` skill in this folder, create a local pointer skill in your workspace
 2. The pointer just references the git file — don't copy the full content
 3. The sync cron (`company-docs-cron-sync.md`) keeps these up to date — but if you notice a mismatch, update manually
-4. **Add a shared skills reference chart to your MEMORY** — list each skill's `name` and one-line `description` (from frontmatter). This lets you know what's available without checking the folder each time. The sync cron will tell you to update this list when skills are added or removed.
+4. Add the Shared Skills list to your MEMORY — see the template in the root `SETUP.md` step 4
 
 ## Pointer format
 
