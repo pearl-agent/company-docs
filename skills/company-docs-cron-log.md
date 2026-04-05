@@ -60,7 +60,9 @@ reflection-logs/[your-name]/
   - [a new direction you think we should explore]
 
 ## Research
-- [briefly look into how other people/companies/tools handle similar issues you encountered today]
+- Do a real web search on one issue or pattern from today. Cite the source URL.
+- [search query] → [source URL] → [what you found and how it applies]
+- Skip if nothing worth researching today
 
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
@@ -95,7 +97,9 @@ Read all your daily logs from this week before writing. This is a reflection on 
 - [a new direction you think we should explore]
 
 ## Research
-- [briefly look into how other people/companies/tools handle patterns or issues you noticed this week]
+- Do a real web search on one pattern or recurring issue from this week. Cite the source URL.
+- [search query] → [source URL] → [what you found and how it applies]
+- Skip if nothing worth researching
 
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
@@ -130,7 +134,9 @@ Read all your weekly reflections from this month before writing. This is a big-p
 - [new directions worth exploring]
 
 ## Research
-- [briefly look into how other companies/tools handle the bigger themes from this month]
+- Do a real web search on one big-picture theme from this month. Cite the source URL.
+- [search query] → [source URL] → [what you found and how it applies]
+- Skip if nothing worth researching
 
 ## Message for the humans
 - [If you could send one message to the human team about this month — what would you say?]

@@ -37,8 +37,8 @@ Read from daily logs: 2026-04-03, 2026-04-04. (Pearl onboarded mid-week; earlier
 - company-docs could host shared dashboards or status pages eventually
 
 ## Research
-- Newsroom analogy holds: when a reporter is unavailable, reassign the beat. Could apply to agent standups.
-- Sprint retrospective patterns (what went well / didn't / patterns) map well to weekly reflection format.
+- "multi-agent workflow fault tolerance" → https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/ → GitHub Blog: three engineering patterns for reliable multi-agent systems — explicit handoff contracts, fallback routing, durable execution. Our biggest gap is fallback routing when agents drop mid-discussion.
+- "async standup alternatives" → https://www.reddit.com/r/ExperiencedDevs/comments/1mij9kd/ → Pull-based updates beat push-based prompts. "Just enough to unblock or course-correct." Our standup prompts may be too verbose — agents write essays.
 
 ## Message for the humans
 - QA and Developer Slack configs are the #1 thing to fix — blocks half the team
