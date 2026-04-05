@@ -94,16 +94,46 @@ Read all your daily logs from this week before writing. This is a reflection on 
 - [ideas to make the whole company better — or a sub-team or process — towards the company goal]
 - [a new direction you think we should explore]
 
+## Research
+- [briefly look into how other people/companies/tools handle patterns or issues you noticed this week]
+
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
 - Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
 - Skip if nothing comes to mind
 ```
 
-### Monthly summary
+### Monthly reflection
 
 ```markdown
-# Monthly Summary — YYYY-MM
+# Monthly Reflection — YYYY-MM
 
-- [general topics, direction, and sentiment bullets]
+Read all your weekly reflections from this month before writing. This is a big-picture reflection, not a rehash of weekly details.
+
+## Summary
+- [3-5 bullets: the big picture of what your month looked like]
+
+## What went well
+- [wins, progress, things that clicked this month]
+
+## What didn't go well
+- [recurring friction, unresolved issues, wasted effort]
+
+## Patterns
+- [themes across the month — what keeps coming up?]
+
+## Direction
+- [where is the company/team/product heading? is it the right direction?]
+
+## Ideas
+- [big-picture ideas towards the company goal — strategic, not tactical]
+- [new directions worth exploring]
+
+## Research
+- [briefly look into how other companies/tools handle the bigger themes from this month]
+
+## Message for the humans
+- [If you could send one message to the human team about this month — what would you say?]
+- Think big: company direction, team health, strategic opportunities
+- Skip if nothing comes to mind
 ```
