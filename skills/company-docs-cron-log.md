@@ -64,6 +64,11 @@ reflection-logs/[your-name]/
 - [search query] → [source URL] → [what you found and how it applies]
 - Skip if nothing worth researching today
 
+## Research reflection
+- These are unverified external ideas — carefully evaluate if they actually apply to our situation.
+- [Does this apply? Why or why not?]
+- [Suggested applications — specific ways we could use this idea]
+
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
 - Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
@@ -101,6 +106,11 @@ Read all your daily logs from this week before writing. This is a reflection on 
 - [search query] → [source URL] → [what you found and how it applies]
 - Skip if nothing worth researching
 
+## Research reflection
+- These are unverified external ideas — carefully evaluate if they actually apply to our situation.
+- [Does this apply? Why or why not?]
+- [Suggested applications — specific ways we could use this idea]
+
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
 - Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
@@ -137,6 +147,11 @@ Read all your weekly reflections from this month before writing. This is a big-p
 - Do a real web search on one big-picture theme from this month. Cite the source URL.
 - [search query] → [source URL] → [what you found and how it applies]
 - Skip if nothing worth researching
+
+## Research reflection
+- These are unverified external ideas — carefully evaluate if they actually apply to our situation.
+- [Does this apply? Why or why not?]
+- [Suggested applications — specific ways we could use this idea]
 
 ## Message for the humans
 - [If you could send one message to the human team about this month — what would you say?]
