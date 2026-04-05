@@ -59,18 +59,45 @@ reflection-logs/[your-name]/
   - [ideas to make the whole company better — or a sub-team or process — towards the company goal]
   - [a new direction you think we should explore]
 
+## Research
+- [briefly look into how other people/companies/tools handle similar issues you encountered today]
+
 ## Message for the humans
 - [If you could send a quick message to the human team right now — what would you say?]
 - Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
 - Skip if nothing comes to mind
 ```
 
-### Weekly summary
+### Weekly reflection
 
 ```markdown
-# Weekly Summary — YYYY-MM-DD
+# Weekly Reflection — YYYY-MM-DD
 
-- [high-level bullets: what shipped, what changed, what's in progress]
+Read all your daily logs from this week before writing. This is a reflection on what you logged, not a fresh status report.
+
+## Summary
+- [3-5 bullets: the big picture of what your week looked like]
+
+## What went well
+- [things that worked, wins, smooth moments]
+
+## What didn't go well
+- [friction, failures, wasted time, things you'd redo]
+
+## Patterns
+- [recurring themes across your daily logs — same blockers? same time sinks? same gaps?]
+
+## Direction
+- [where things seem to be heading — is it the right direction?]
+
+## Ideas
+- [ideas to make the whole company better — or a sub-team or process — towards the company goal]
+- [a new direction you think we should explore]
+
+## Message for the humans
+- [If you could send a quick message to the human team right now — what would you say?]
+- Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
+- Skip if nothing comes to mind
 ```
 
 ### Monthly summary
