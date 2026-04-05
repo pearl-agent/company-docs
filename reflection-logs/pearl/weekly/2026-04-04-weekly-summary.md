@@ -1,45 +1,46 @@
-# Pearl — Weekly Summary — 2026-04-04
+# Weekly Reflection — 2026-04-04
 
-**Period:** 2026-03-28 → 2026-04-03
-**Coverage:** 1 daily log on file (2026-04-03). Pearl onboarded mid-week; earlier days pre-date logging.
+Read from daily logs: 2026-04-03, 2026-04-04. (Pearl onboarded mid-week; earlier days pre-date logging.)
 
----
+## Summary
+- Built the entire daily report system from scratch — skills, templates, integrations, cron jobs
+- Launched company-docs shared repo with roster, policies, skills, logs, schedules
+- Ran 4 daily reports, morning standups, and agent discussion rounds
+- Hit significant friction with agent auth failures and API outages mid-week
+- Reports paused at end of week for format iteration
 
-## What Shipped
+## What went well
+- company-docs repo stood up fast — onboarding, shared skills, consistent templates
+- Agent discussion format produced genuinely useful cross-pollination when agents could participate
+- Daily report pipeline went from zero to operational in one session
+- George onboarded to company-docs smoothly
 
-- PAZ-280 — Webchat file support
-- PAZ-264 — Slack thread suppression
-- PAZ-281 — Marketing copy updates
-- 9 PRs merged, 69 commits, 7 production deploys (reported 2026-04-03)
+## What didn't go well
+- QA + Developer auth failures killed 50% agent capacity during discussions
+- Linear API down for 3+ days — reports missing issue tracker data
+- Runaway cron session posted repeatedly to Slack (no-timeout was a mistake)
+- Multiple rounds of cleaning up orphaned Slack messages from failed sessions
 
-## What Changed
+## Patterns
+- Agent reliability on Slack is the single biggest bottleneck — when agents can't post, everything degrades
+- Skill instructions that aren't explicit enough get misinterpreted by cron sessions
+- "One more retry" without a hard cap leads to chaos
 
-- **company-docs repo stood up** — Logs restructured to per-agent folders, shared skills created (date-now, slack-rules, slack-users, cron-log, cron-sync, cron-lookup, cron-set-reminder, cron-try-again-soon, skill-add-or-edit), onboarding docs, roster with avatars, agent schedules
-- **Agent collaboration framework launched** — Morning standups + post-report discussions running with 4 agents (DevOps, Growth, QA, Developer)
-- **Daily report pipeline operational** — 4 reports generated since launch; HTML + plaintext + raw data archive
+## Direction
+- Infrastructure and tooling is solid now — the focus should shift to reliability and consistency of the daily pipeline
+- The agent discussion format needs the auth issues fixed before it can be trusted
+- company-docs is becoming the collaboration backbone — worth investing in
 
-## In Progress
+## Ideas
+- Agent health check before meetings — verify all agents can post before starting rounds
+- Redistribute standup questions when an agent is down (newsroom model)
+- company-docs could host shared dashboards or status pages eventually
 
-- PAZ-282 — Image generation (170+ thread replies, active development)
-- PAZ-286 — Reactions (Codex approach selected via cross-review)
-- 5 other issues tracked as in-progress
-- Linear API access restoration (QA testing keys; not yet resolved)
+## Research
+- Newsroom analogy holds: when a reporter is unavailable, reassign the beat. Could apply to agent standups.
+- Sprint retrospective patterns (what went well / didn't / patterns) map well to weekly reflection format.
 
-## Open Issues
-
-- **QA + Developer Slack auth broken** — `403 user_id_mismatch` errors; 50% agent capacity lost in discussion rounds 3–4
-- **Sentry errors doubled** to 26.7K; log errors 5× to 1,664
-- **Route53 at 95.9% quota** (9,586/10,000) — approaching limit
-- **PAZ-223 (backup retention) stalled** — needs priority decision
-
-## Flagged for Humans
-
-- [ ] Fix QA + Developer Slack bot token configs
-- [ ] Growth needs PostHog access
-- [ ] SSL wildcard cert expires ~June
-- [ ] PAZ-223 stalled — needs triage
-- [ ] Route53 quota headroom shrinking
-
----
-
-_Note: This is Pearl's first weekly summary. Only 1 daily log existed for the period. Future weeklies will have fuller coverage._
+## Message for the humans
+- QA and Developer Slack configs are the #1 thing to fix — blocks half the team
+- Route53 at 95.9% quota deserves a glance
+- When reports resume, the new templates + reflection logs give much richer source material
