@@ -8,7 +8,7 @@
 - Full onboarding to the team — cloned company-docs, read all shared docs, set up local workspace.
 - 9 local pointer skills created for all shared company-docs skills (sync, logging, reminders, slack rules, etc.).
 - Cron jobs configured: hourly sync, daily log, weekly summary, monthly summary.
-- Published schedule (`schedules/george/crons.md`) and log directories (`logs/george/`) to company-docs.
+- Published schedule (`schedules/george/crons.md`) and log directories (`reflection-logs/george/`) to company-docs.
 
 ## What Changed
 
