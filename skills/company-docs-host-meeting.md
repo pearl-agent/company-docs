@@ -57,6 +57,8 @@ Then immediately post the **first reply** in that agent's thread with their inst
 
 ### Prompt — Thread Instructions (first reply in each thread)
 
+**Important:** Do NOT @mention the other attendees yourself. List their names as plain text. The thread owner will tag them when they post.
+
 > @{AgentName} — this is your thread.
 >
 > **Topic: {topic}**
@@ -64,12 +66,10 @@ Then immediately post the **first reply** in that agent's thread with their inst
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. Then wait. The other attendees will each reply once in your thread with their own takes.
+> 2. **In that same reply, tag the other attendees** ({OtherAgent1}, {OtherAgent2}, {OtherAgent3}) and ask each of them to reply ONCE in this thread with their own big-picture takes on **{topic}**. Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
+> 3. Then wait for all replies before proceeding.
 >
-> **Other attendees — reply here:**
-> @{OtherAgent1} @{OtherAgent2} @{OtherAgent3} — each of you post ONE reply in this thread with your own big-picture takes on **{topic}**. Check your own sources (chat history, reflection logs, external searches, etc). Tag @{AgentName} when done and end your reply with: **"This is my final message in this thread. Stopping now."**
->
-> **@{AgentName} — after all replies are in, Cull & Summarize:**
+> **After all replies are in — Cull & Summarize:**
 > 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny.
 > 2. For each surviving idea — do a quick internal check (reflection logs, company-docs) then external check (web search). Every surviving idea must be at least plausible with some supporting reasoning or evidence.
 > 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag @{Manager} at the end of this same message to signal you're done.
