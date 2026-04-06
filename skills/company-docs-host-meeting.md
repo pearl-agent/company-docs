@@ -141,7 +141,7 @@ Once all summaries are collected (or meeting-completion timer fires):
 ### Output template — List format
 
 Each item is ONE line: verb-first action (~10 words max), then ` — {Agent name} & {Human name}`.
-No @tags in the list. Names only. Real @tag only on the meeting requester at the bottom.
+No @tags in the list — names only. The meeting requester at the bottom MUST be a real Slack @tag (e.g. `<@U098CNKQ2JV>`), not just text. Look up their Slack ID from the roster and use the real tag.
 Keep the full detailed version (from whiteboard summaries) in memory — if someone replies
 with an item number asking for details, provide the full context. If they say "proceed on {N}"
 or "start {N}", tag the assigned agent and give them all the detail to begin work.
