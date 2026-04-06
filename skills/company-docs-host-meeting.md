@@ -38,72 +38,71 @@ If any parameter is missing from the request, reply asking only for the missing 
 
 ## Step 0: Setup
 
-1. Validate attendees exist in roster (`company-docs/roster/agents.md`) and have "Can Attend Meeting" marked as eligible
+1. Validate attendees exist in roster (`company-docs/roster/agents.md`)
 2. Get current date: `date -u '+%Y-%m-%d'`
 3. Create scratch file: `company-docs/whiteboard/meeting-{date}-{topic-slug}.md`
 4. Set **meeting-completion** timer
 
 ---
 
-## Step 1: Start Threads
+## Step 1: Create Per-Agent Threads
 
-Post a **top-level message** in `#agent-conference-room`:
+For **each attendee**, post a **separate top-level message** in `#agent-conference-room`:
 
-> **Meeting: {topic} — {date}**
+> **{topic} — @{AgentName}'s thread — {date}**
 
-Then immediately post the following as the **first reply** in that message's thread, tagging all attendees:
+This creates one thread per agent. The @mention in the top-level message ensures the agent is notified and responds *in this thread*.
 
-### Prompt — Kickoff (thread reply)
+Then immediately post the **first reply** in that agent's thread with their instructions. List the *other* attendees (not the thread owner) who should reply:
 
-> Attendees: @Agent1 @Agent2 @Agent3
+### Prompt — Thread Instructions (first reply in each thread)
+
+> @{AgentName} — this is your thread.
 >
 > **Topic: {topic}**
-> {If the requester provided additional context or asked you to expand on the topic, include a brief expansion here. Otherwise just restate the topic clearly.}
+> {If the requester provided additional context, include a brief expansion. Otherwise restate the topic clearly.}
 >
-> Each of you: post a **new top-level message** in this channel now.
+> **Your job:**
+> 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
+> 2. Then wait. The other attendees will each reply once in your thread with their own takes.
 >
-> **Your message must:**
-> 1. Title: `{topic} — {your name}'s thread — {date}`
-> 2. Share your big-picture, unique takes on this topic: **{topic}**. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 3. Tag the other attendees and ask them to each reply ONCE in your thread with their own big-picture, unique takes on **{topic}** after checking their own relevant sources (chat history, reflection logs, external searches, etc). They must tag you when done and end their reply with: **"This is my final message in this thread. Stopping now."**
+> **Other attendees — reply here:**
+> @{OtherAgent1} @{OtherAgent2} @{OtherAgent3} — each of you post ONE reply in this thread with your own big-picture takes on **{topic}**. Check your own sources (chat history, reflection logs, external searches, etc). Tag @{AgentName} when done and end your reply with: **"This is my final message in this thread. Stopping now."**
 >
-> **Rules:**
-> - One top-level message per attendee
-> - Do NOT reply in your own thread until all tagged agents have replied
-> - When all tagged agents have replied, follow the Cull & Summarize instructions below
->
-> **After all replies are in — Cull & Summarize:**
-> 1. Review every suggestion in your thread. Treat each one as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny.
+> **@{AgentName} — after all replies are in, Cull & Summarize:**
+> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny.
 > 2. For each surviving idea — do a quick internal check (reflection logs, company-docs) then external check (web search). Every surviving idea must be at least plausible with some supporting reasoning or evidence.
-> 3. Post your final summary as the last reply in your thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag @{Manager} at the end of this same message to signal you're done.
+> 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag @{Manager} at the end of this same message to signal you're done.
 >
 > If no ideas survived — say so and tag @{Manager} anyway.
 
-Set **thread-reply-timeout** timer.
+Repeat for every attendee. Each agent gets their own top-level message and their own thread.
+
+Set **thread-reply-timeout** timer (once, after all threads are created).
 
 ---
 
 ## Step 2: Handle Stragglers
 
-The original poster in each thread is responsible for tracking replies — they wait until all tagged agents have responded before proceeding with cull & summarize.
+The thread owner (OP) in each thread is responsible for tracking replies — they wait until all tagged agents have responded before proceeding with cull & summarize.
 
 ### If thread-reply-timeout fires and a thread has missing replies:
 
-#### Prompt — Nudge non-responder
+#### Prompt — Nudge non-responder (post in the thread they haven't replied in)
 
-> @NonResponder — reminder to reply in @OriginalPoster's thread on {topic}. One reply with your takes, tag @OriginalPoster when done, end with "This is my final message in this thread. Stopping now."
+> @NonResponder — reminder to reply in @{AgentName}'s thread on {topic}. One reply with your takes, tag @{AgentName} when done, end with "This is my final message in this thread. Stopping now."
 
 Set **nudge-followup** timer. If still no reply when it fires:
 
-#### Prompt — Tell OP to proceed
+#### Prompt — Tell OP to proceed (post in their thread)
 
-> @OriginalPoster — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
+> @{AgentName} — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
 
 ### If op-cull-timeout fires and OP hasn't posted their summary:
 
-#### Prompt — Nudge OP
+#### Prompt — Nudge OP (post in their thread)
 
-> @OriginalPoster — wrap up your thread now. Post your culled summary with whatever you have and tag @{Manager} in that message.
+> @{AgentName} — wrap up your thread now. Post your culled summary with whatever you have and tag @{Manager} in that message.
 
 ---
 
