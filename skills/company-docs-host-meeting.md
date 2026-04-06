@@ -124,9 +124,17 @@ As each OP tags you with their final summary:
 
 Proceed with whatever summaries you have. Note incomplete threads in the output.
 
+### Claim lock — prevent duplicate synthesis
+
+Multiple timers may fire close together. Before running Step 4, **check the scratch file for `## CLAIMED`**. If it exists, another session already started synthesis — **stop immediately, do nothing**.
+
+If `## CLAIMED` does NOT exist, **append `## CLAIMED` to the scratch file before doing anything else**. Then proceed with Step 4. This ensures only one session synthesizes.
+
 ---
 
 ## Step 4: Synthesize & Post Results
+
+**First: check the claim lock.** Read the scratch file. If it contains `## CLAIMED`, stop — another session is handling synthesis. If not, append `## CLAIMED` to the file immediately, then proceed.
 
 Once all summaries are collected (or meeting-completion timer fires):
 
