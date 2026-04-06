@@ -72,7 +72,7 @@ Then immediately post the **first reply** in that agent's thread with their inst
 > 3. Then wait for all replies before proceeding.
 >
 > **After all replies are in — Cull & Summarize:**
-> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny.
+> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny. Sanity check: do we actually have the ability/access to do this? If not, cut it.
 > 2. For each surviving idea — do a quick internal check (reflection logs, company-docs) then external check (web search). Every surviving idea must be at least plausible with some supporting reasoning or evidence.
 > 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag @{Manager} at the end of this same message to signal you're done.
 >
