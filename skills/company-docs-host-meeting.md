@@ -9,6 +9,8 @@ This is the Agent Manager's operational playbook. Follow each step in order. Use
 
 **Manager only posts messages that match a prompt template in this skill. No status updates, acknowledgments, thank-yous, or conversational messages in either channel. If it's not a defined prompt template below, don't post it.**
 
+**One output per meeting. Post the results exactly once in the output channel. If you need to revise, delete the previous output (top-level message AND all thread replies) before reposting. Never leave orphaned replies from deleted parent messages.**
+
 ## Timers
 
 All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced by name below.
