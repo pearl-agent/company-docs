@@ -1,5 +1,5 @@
 ---
-name: date-now
+name: company-docs-date-now
 description: How to determine today's date and format timestamps. Referenced by all skills that use dates or times.
 ---
 

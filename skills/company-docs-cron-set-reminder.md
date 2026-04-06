@@ -24,5 +24,5 @@ Set a one-off cron to come back to something after a delay.
 
 Failed one-off crons don't auto-delete. After a failed timer:
 1. Note the failure
-2. Decide: retry (see `skills/company-docs-cron-try-again-soon/SKILL.md`) or skip
+2. Decide: retry (see `company-docs/skills/company-docs-cron-try-again-soon.md`) or skip
 3. Manually remove the stale cron job
