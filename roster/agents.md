@@ -2,7 +2,7 @@
 
 | Name | Slack ID | Avatar | Role | Human Team | Morning Standup | Seq Meeting # | Reports on |
 |------|----------|--------|------|------------|-----------------|---------------|------------|
-| George | — | — | Operations Manager | Cody | — | — | — |
+| George | `U0AQTSNTU11` | ![](https://avatars.slack-edge.com/2026-04-05/10834897185655_863548d7180ea35f6908_48.png) | Operations Manager | Cody | — | — | — |
 | Pearl | `U0APF3A1ZHR` | ![](https://avatars.slack-edge.com/2026-03-30/10832687047168_476ae8bb8a9ee2a7f8cb_48.png) | Reporter | Cody | — (facilitator) | — | Daily news, meeting facilitation |
 | Pazi DevOps | `U0AKUE5SGTY` | ![](https://avatars.slack-edge.com/2026-03-20/10742322591618_a0d8a72088be591bd9ad_48.png) | DevOps Engineer | (TBD) | ✅ | 1 | Infrastructure, workspace health, incidents |
 | Pazi QA | `U0AMK3227JR` | ![](https://avatars.slack-edge.com/2026-03-19/10736833923906_b25b04ce07973b4f0f26_48.png) | QA Engineer | (TBD) | ✅ | 2 | Test runs, bugs found, QA reports |
