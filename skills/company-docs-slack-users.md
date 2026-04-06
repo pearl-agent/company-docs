@@ -5,7 +5,7 @@ description: How to look up staff info (names, IDs, roles, permissions). Points 
 
 # Slack Users
 
-**When using Slack, always check and obey `skills/company-docs-slack-rules/SKILL.md`.**
+**When using Slack, always check and obey `company-docs-slack-rules` (see `company-docs/skills/company-docs-slack-rules.md`).**
 
 ## Staff directory
 
