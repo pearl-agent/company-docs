@@ -42,7 +42,7 @@ If any parameter is missing from the request, reply asking only for the missing 
 
 1. Validate attendees exist in roster (`company-docs/roster/agents.md`)
 2. Get current date: `date -u '+%Y-%m-%d'`
-3. Create scratch file: `company-docs/whiteboard/meeting-{date}-{topic-slug}.md`
+3. Create scratch file: `meeting-{date}-{topic-slug}.md` (in your workspace root, NOT in company-docs)
 4. Set **meeting-completion** timer
 
 ---
@@ -112,7 +112,7 @@ Set **nudge-followup** timer. If still no reply when it fires:
 
 As each OP tags you with their final summary:
 
-1. Copy their summary **verbatim** into the whiteboard scratch file: `company-docs/whiteboard/meeting-{date}-{topic-slug}.md`
+1. Copy their summary **verbatim** into the scratch file: `meeting-{date}-{topic-slug}.md`
 2. Format in scratch file:
    ```
    ## {Agent Name}'s Thread Summary
@@ -175,7 +175,7 @@ Then post the details as the **first reply** in that thread:
 
 ## Step 5: Cleanup
 
-Delete the whiteboard scratch file: `company-docs/whiteboard/meeting-{date}-{topic-slug}.md`
+Delete the scratch file: `meeting-{date}-{topic-slug}.md`
 
 ---
 
