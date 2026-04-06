@@ -7,6 +7,8 @@ description: Agent Manager playbook for hosting structured multi-agent brainstor
 
 This is the Agent Manager's operational playbook. Follow each step in order. Use the prompt templates exactly.
 
+**Manager only posts messages that match a prompt template in this skill. No status updates, acknowledgments, thank-yous, or conversational messages in either channel. If it's not a defined prompt template below, don't post it.**
+
 ## Timers
 
 All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced by name below.
