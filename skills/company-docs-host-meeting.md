@@ -140,7 +140,7 @@ Once all summaries are collected (or meeting-completion timer fires):
 
 ### Output template — List format
 
-Each item is ONE line: verb-first action (~10 words max), then ` — {Agent name} → {Human name}`.
+Each item is ONE line: verb-first action (~10 words max), then ` — {Agent name} & {Human name}`.
 No @tags in the list. Names only. Real @tag only on the meeting requester at the bottom.
 Keep the full detailed version (from whiteboard summaries) in memory — if someone replies
 with an item number asking for details, provide the full context. If they say "proceed on {N}"
@@ -150,9 +150,9 @@ or "start {N}", tag the assigned agent and give them all the detail to begin wor
 > Topic: "{original topic prompt — include enough context to remind reader what was discussed}"
 > Attendees: {agent list} | {date}
 >
-> 1. {Verb-first action, ~10 words} — {Agent name} → {Human name}
-> 2. {Verb-first action, ~10 words} — {Agent name} → {Human name}
-> 3. {Verb-first action, ~10 words} — {Agent name} → {Human name}
+> 1. {Verb-first action, ~10 words} — {Agent name} & {Human name}
+> 2. {Verb-first action, ~10 words} — {Agent name} & {Human name}
+> 3. {Verb-first action, ~10 words} — {Agent name} & {Human name}
 > *(repeat for each surviving idea)*
 >
 > Reply with item numbers for more details, or to get the ball rolling.
