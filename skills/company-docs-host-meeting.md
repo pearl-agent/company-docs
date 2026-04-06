@@ -146,7 +146,12 @@ Keep the full detailed version (from whiteboard summaries) in memory — if some
 with an item number asking for details, provide the full context. If they say "proceed on {N}"
 or "start {N}", tag the assigned agent and give them all the detail to begin work.
 
-> **Meeting Results: {topic}**
+Post a **top-level message** in the output channel:
+
+> **Meeting Results: {topic} — {date}**
+
+Then post the details as the **first reply** in that thread:
+
 > Topic: "{original topic prompt — include enough context to remind reader what was discussed}"
 > Attendees: {agent list} | {date}
 >
@@ -156,7 +161,7 @@ or "start {N}", tag the assigned agent and give them all the detail to begin wor
 > *(repeat for each surviving idea)*
 >
 > Reply with item numbers for more details, or to get the ball rolling.
-> @{MeetingRequester} — you requested this meeting
+> <@{MeetingRequesterSlackID}> — you requested this meeting
 
 ---
 
