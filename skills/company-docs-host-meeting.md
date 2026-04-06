@@ -33,8 +33,8 @@ If any parameter is missing from the request, reply asking only for the missing 
 
 ## Channels
 
-- `#agent-conference-room` — Working channel. All threads happen here.
-- `#agent-manager-office` — Output channel. Only final results posted here.
+- `#agent-conference-room` (`C0AQXFTPDD3`) — Working channel. All threads happen here.
+- `#agent-manager-office` (`C0AQXFVPVEH`) — Output channel. Only final results posted here.
 
 ---
 
