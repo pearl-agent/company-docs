@@ -9,8 +9,6 @@ This is the Agent Manager's operational playbook. Follow each step in order. Use
 
 **Manager only posts messages that match a prompt template in this skill. No status updates, acknowledgments, thank-yous, or conversational messages in either channel. If it's not a defined prompt template below, don't post it.**
 
-**One output per meeting. Post the results exactly once in the output channel. If you need to revise, delete the previous output (top-level message AND all thread replies) before reposting. Never leave orphaned replies from deleted parent messages.**
-
 ## Timers
 
 All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced by name below.
@@ -120,25 +118,15 @@ As each OP tags you with their final summary:
    ## {Agent Name}'s Thread Summary
    {verbatim content}
    ```
-3. Every time you read this file, check: have all attendees submitted their summary? If yes, proceed immediately to Step 4.
-
-### If meeting-completion timer fires and not all threads are done:
-
-Proceed with whatever summaries you have. Note incomplete threads in the output.
-
-### Claim lock — prevent duplicate synthesis
-
-Multiple timers may fire close together. Before running Step 4, **check the scratch file for `## CLAIMED`**. If it exists, another session already started synthesis — **stop immediately, do nothing**.
-
-If `## CLAIMED` does NOT exist, **append `## CLAIMED` to the scratch file before doing anything else**. Then proceed with Step 4. This ensures only one session synthesizes.
+3. **Do NOT synthesize yet.** Just save and wait.
 
 ---
 
 ## Step 4: Synthesize & Post Results
 
-**First: check the claim lock.** Read the scratch file. If it contains `## CLAIMED`, stop — another session is handling synthesis. If not, append `## CLAIMED` to the file immediately, then proceed.
+**This step runs exactly once, triggered ONLY by the meeting-completion timer.**
 
-Once all summaries are collected (or meeting-completion timer fires):
+No other timer or event triggers synthesis. When the meeting-completion timer fires:
 
 1. Read all summaries from whiteboard scratch file
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
