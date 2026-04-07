@@ -15,7 +15,7 @@ All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced
 
 | Timer name | Duration | Purpose |
 |------------|----------|---------|
-| thread-reply-timeout | 3 min after kickoff | Nudge attendees who haven't replied in a thread |
+| thread-reply-timeout | 5 min after kickoff | Nudge attendees who haven't replied in a thread |
 | nudge-followup | 2 min after nudge | Tell OP to proceed without non-responder |
 | op-cull-timeout | 3 min after last reply in thread | Nudge OP to post their summary |
 | meeting-completion | 10 min after kickoff | Hard stop — synthesize whatever is available |
