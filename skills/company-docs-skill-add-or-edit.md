@@ -25,6 +25,12 @@ Read this before creating or editing any skill.
 - If there's any chance a piece of logic could be used in more than one place, make it its own skill
 - A skill should do one thing
 
+### Local pointer skill
+- When creating a **new** shared skill in `company-docs/skills/`, you MUST also create a local pointer skill at `skills/company-docs-{name}/SKILL.md` in your workspace
+- The pointer must include a `description` in its frontmatter that matches the skill's purpose — this is how the skill gets discovered at session start
+- When editing an existing skill's description or name, update the local pointer too
+- Do NOT rely on `cron-sync` to create pointers — the skill is invisible until the pointer exists
+
 ### Report changes to your human
 When confirming a skill add or edit is done, list each skill touched by name, then under each:
 - Bullet the targeted areas
