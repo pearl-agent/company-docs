@@ -29,7 +29,34 @@ Received from meeting requester:
 - **Output format** — `list` (default). More formats may be added later.
 - **Output length** — `full` (default, no limit) or `max N` (cap at N items)
 
-If any parameter is missing from the request, reply asking only for the missing ones. Show their options and include: "Or say 'use all defaults' for: 1 round, list format, full length." Only apply defaults if the requester explicitly says so.
+If any parameter is missing from the request, use the templates below to ask. Always look up the current eligible agent names from `company-docs/roster/agents.md` — never hardcode or guess the list. Only apply defaults if the requester explicitly says so.
+
+### Prompt — Missing parameters: topic + attendees
+
+Use when someone asks for a meeting but provides neither topic nor attendees:
+
+> To set up a meeting I need:
+>
+> 1. **Topic** — what should they discuss?
+> 2. **Attendees** — pick 2+ from: {names from roster}
+>
+> Optional (or say "use all defaults"):
+> - Rounds: 1 (default)
+> - Format: abbreviated list — reply with item numbers for full details (default)
+> - Length: all bullets (default) or max N bullets
+
+### Prompt — Missing parameters: attendees only
+
+Use when topic is provided but attendees are missing:
+
+> To set up a meeting on **{topic}** I need:
+>
+> **Attendees** — pick 2+ from: {names from roster}
+>
+> Optional (or say "use all defaults"):
+> - Rounds: 1 (default)
+> - Format: abbreviated list — reply with item numbers for full details (default)
+> - Length: all bullets (default) or max N bullets
 
 ## Channels
 
