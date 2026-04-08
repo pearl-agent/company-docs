@@ -15,10 +15,12 @@ All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced
 
 | Timer name | Duration | Purpose |
 |------------|----------|---------|
-| thread-reply-timeout | 7 min after kickoff | Nudge attendees who haven't replied in a thread |
-| nudge-followup | 4 min after nudge | Tell OP to proceed without non-responder |
-| op-cull-timeout | 5 min after last reply in thread | Nudge OP to post their summary |
-| meeting-completion | 12 min after kickoff | Hard stop — synthesize whatever is available |
+| thread-reply-timeout | 9 min after kickoff | Nudge attendees who haven't replied in a thread |
+| nudge-followup | 6 min after nudge | Tell OP to proceed without non-responder |
+| op-cull-timeout | 7 min after last reply in thread | Nudge OP to post their summary |
+| meeting-completion | 22 min after kickoff | Hard stop — synthesize whatever is available |
+
+**Timer chain note:** meeting-completion must never fire before the full straggler chain can complete. Minimum safe value = thread-reply-timeout + nudge-followup + cull buffer (9 + 6 + 7 = 22 min). Do not reduce meeting-completion below this floor.
 
 ## Input parameters
 
