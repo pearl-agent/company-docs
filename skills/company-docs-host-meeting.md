@@ -15,10 +15,10 @@ All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced
 
 | Timer name | Duration | Purpose |
 |------------|----------|---------|
-| thread-reply-timeout | 5 min after kickoff | Nudge attendees who haven't replied in a thread |
-| nudge-followup | 2 min after nudge | Tell OP to proceed without non-responder |
-| op-cull-timeout | 3 min after last reply in thread | Nudge OP to post their summary |
-| meeting-completion | 10 min after kickoff | Hard stop — synthesize whatever is available |
+| thread-reply-timeout | 7 min after kickoff | Nudge attendees who haven't replied in a thread |
+| nudge-followup | 4 min after nudge | Tell OP to proceed without non-responder |
+| op-cull-timeout | 5 min after last reply in thread | Nudge OP to post their summary |
+| meeting-completion | 12 min after kickoff | Hard stop — synthesize whatever is available |
 
 ## Input parameters
 
@@ -78,32 +78,32 @@ Use when topic is provided but attendees are missing:
 
 For **each attendee**, post a **separate top-level message** in `#agent-conference-room`:
 
-> **{topic} — @{AgentName}'s thread — {date}**
+> **{topic} — <@{AgentSlackID}>'s thread — {date}**
 
-This creates one thread per agent. The @mention in the top-level message ensures the agent is notified and responds *in this thread*.
+This creates one thread per agent. The `<@SlackID>` mention in the top-level message ensures the agent is notified and responds *in this thread*.
 
-Then immediately post the **first reply** in that agent's thread with their instructions. List the *other* attendees (not the thread owner) who should reply:
+Then immediately post the **first reply** in that agent's thread with their instructions.
+
+**Always use real `<@SlackID>` tags for every agent mention** — in both the top-level message and the reply. Look up all IDs from `company-docs/roster/agents.md` before posting. Never use plain names or @Name placeholders in the actual messages.
 
 ### Prompt — Thread Instructions (first reply in each thread)
 
-**Important:** Do NOT @mention the other attendees yourself. List their names as plain text. The thread owner will tag them when they post.
-
-> @{AgentName} — this is your thread.
+> <@{AgentSlackID}> — this is your thread.
 >
 > **Topic: {topic}**
 > {If the requester provided additional context, include a brief expansion. Otherwise restate the topic clearly.}
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. **In that same reply, tag the other attendees** ({OtherAgent1}, {OtherAgent2}, {OtherAgent3}) and ask each of them to reply ONCE in this thread with their own big-picture takes on **{topic}**. Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
+> 2. **In that same reply, tag the other attendees** (<@{OtherAgent1SlackID}>, <@{OtherAgent2SlackID}>, <@{OtherAgent3SlackID}>) and ask each of them to reply ONCE in this thread with their own big-picture takes on **{topic}**. Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
 > 3. Then wait for all replies before proceeding.
 >
 > **After all replies are in — Cull & Summarize:**
 > 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. Remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny. Sanity check: do we actually have the ability/access to do this? If not, cut it.
 > 2. For each surviving idea — do a quick internal check (reflection logs, company-docs) then external check (web search). Every surviving idea must be at least plausible with some supporting reasoning or evidence.
-> 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag @{Manager} at the end of this same message to signal you're done.
+> 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
 >
-> If no ideas survived — say so and tag @{Manager} anyway.
+> If no ideas survived — say so and tag <@{ManagerSlackID}> anyway.
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
@@ -115,23 +115,40 @@ Set **thread-reply-timeout** timer (once, after all threads are created).
 
 The thread owner (OP) in each thread is responsible for tracking replies — they wait until all tagged agents have responded before proceeding with cull & summarize.
 
-### If thread-reply-timeout fires and a thread has missing replies:
+### If thread-reply-timeout fires:
+
+**Before posting anything:** Read the thread (use message `read` action on the thread) to check who has actually replied.
+
+- If **all expected attendees have replied** → do nothing. No nudge needed.
+- If **replies are missing** → nudge only the agents who have NOT replied yet.
 
 #### Prompt — Nudge non-responder (post in the thread they haven't replied in)
 
-> @NonResponder — reminder to reply in @{AgentName}'s thread on {topic}. One reply with your takes, tag @{AgentName} when done, end with "This is my final message in this thread. Stopping now."
+Use real `<@SlackID>` tags for all mentions. Look up IDs from `company-docs/roster/agents.md`.
+
+> <@{NonResponderSlackID}> — reminder to reply in <@{AgentNameSlackID}>'s thread on {topic}. One reply with your takes, tag <@{AgentNameSlackID}> when done, end with "This is my final message in this thread. Stopping now."
 
 Set **nudge-followup** timer. If still no reply when it fires:
 
+**Before posting anything:** Re-read the thread to confirm the agent still hasn't replied.
+
+- If they **have replied since the nudge** → do nothing. No message needed.
+- If they **still haven't replied** → tell OP to proceed.
+
 #### Prompt — Tell OP to proceed (post in their thread)
 
-> @{AgentName} — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
+> <@{AgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
 
 ### If op-cull-timeout fires and OP hasn't posted their summary:
 
+**Before posting anything:** Re-read the thread to confirm the OP has not yet posted a cull summary.
+
+- If the **summary is already there** → do nothing.
+- If it's **still missing** → nudge the OP.
+
 #### Prompt — Nudge OP (post in their thread)
 
-> @{AgentName} — wrap up your thread now. Post your culled summary with whatever you have and tag @{Manager} in that message.
+> <@{AgentNameSlackID}> — wrap up your thread now. Post your culled summary with whatever you have and tag <@{ManagerSlackID}> in that message.
 
 ---
 
