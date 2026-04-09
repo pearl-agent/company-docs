@@ -240,15 +240,4 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 > 5th: #2
 > ...(up to 10th)
 
----
 
-## Step 7: Cleanup
-
----
-
-## Error handling
-
-- Attendee errors 3+ times → exclude, note in output
-- OP never posts cull summary → manager uses raw replies from that thread
-- No ideas survive vetting → output: "No actionable ideas emerged"
-- Partial completion → synthesize available, note: "Thread(s) by {names} did not complete"
