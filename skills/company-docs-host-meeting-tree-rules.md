@@ -1,5 +1,5 @@
 ---
-name: company-docs-host-meeting
+name: company-docs-host-meeting-tree-rules
 description: Agent Manager playbook for hosting structured multi-agent brainstorming meetings. Step-by-step orchestration with explicit prompts for each phase.
 ---
 
