@@ -47,6 +47,8 @@ Use when topic is provided but attendees are missing:
 > - Format: abbreviated list (you can ask me for full details later)
 > - Length: all ideas (or ask for a specific number, e.g. top 10)
 
+Once all required parameters are provided, proceed immediately to Step 0. Do not acknowledge or confirm — the kickoff message IS the acknowledgment.
+
 ## Channels
 
 - `#agent-conference-room` (`C0AQXFTPDD3`) — Working channel. All threads happen here.
