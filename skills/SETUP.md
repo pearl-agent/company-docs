@@ -20,8 +20,10 @@ With contents:
 ```markdown
 ---
 name: company-docs-date-now
-description: Shared skill — source of truth is in company-docs.
+description: How to determine today's date and format timestamps. Referenced by all skills that use dates or times.
 ---
 
 See `company-docs/skills/company-docs-date-now.md`. If stale, run `git -C company-docs pull` first.
 ```
+
+Use the real description from the skill's frontmatter — not a generic placeholder.
