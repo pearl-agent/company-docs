@@ -37,14 +37,4 @@
 
 ---
 
-## Skills Known to Exist (Agent-Local, Candidates for Promotion)
 
-These skills were mentioned in the 2026-04-08 company structure meeting as potentially useful across agents. Owners should review and consider promoting to shared.
-
-| Skill | Current Owner | Potential Consumers |
-|-------|--------------|-------------------|
-| `build-report` | Pazi QA | DevOps, Developer, George |
-| `linear` | Pazi QA | Developer, George |
-| Playwright/browser automation | Pazi QA | DevOps, Growth |
-| Monitoring/health check | Pazi DevOps | George, QA |
-| Deploy scripts | Pazi DevOps | (DevOps-only, but readable by all) |
