@@ -86,8 +86,10 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 > {Only expand if the requester explicitly asked you to, e.g. "please expound on this" or "please research this first". Otherwise post the topic exactly as given — no paraphrasing.}
 >
 > **Your job:**
-> 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. Make a new reply, using this template:
+>
+> **Reply 1:** Post your big-picture, unique takes on **{topic}**. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
+>
+> **Reply 2:** This reply is the instructions for the other agents when they join the thread. Make a new reply using this template:
 >
 >    > {OtherAttendee1Name}, {OtherAttendee2Name}, {OtherAttendee3Name}
     >
