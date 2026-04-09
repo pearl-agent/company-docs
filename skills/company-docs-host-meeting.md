@@ -105,7 +105,7 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 >    2. Share their own unique ideas that do NOT overlap with what you already said — check your post first, don't repeat covered ideas
 >    3. Go through each idea you posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
 >    4. Tag you when done and end with: **"This is my final message in this thread. Stopping now."**
-> 3. Check the thread periodically. Say nothing if not all agents have replied yet. Proceed to Cull & Summarize only once all tagged agents have replied.
+> 3. You will be tagged in each reply as agents finish. Once you have been tagged by all attendees, proceed to Cull & Summarize.
 >
 > **After all replies are in — Cull & Summarize:**
 > 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea:
