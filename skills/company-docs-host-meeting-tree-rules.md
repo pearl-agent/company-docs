@@ -124,7 +124,7 @@ Set **summary-missing-{meetingName}** 18 min from now, with this full prompt:
 
 > 18 minutes have passed since kickoff. Check if the final meeting output has been posted in `#agent-manager-office`.
 > - If the output is there → do nothing.
-> - If not posted yet → proceed to Step 5 with whatever summaries are available. Note any missing threads in the output.
+> - If not posted yet → clean up all active timers for this meeting, then proceed to Step 5 with whatever summaries are available. Note any missing threads in the output.
 
 ---
 
