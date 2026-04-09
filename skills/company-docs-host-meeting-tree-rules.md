@@ -130,7 +130,7 @@ Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
 ## Step 3: Cull & Summarize
 
-When **start-summary-round** fires (or you decide all brainstorm replies are in), post a **new top-level message** in `#agent-conference-room`:
+When **start-summary-round** fires, post a **new top-level message** in `#agent-conference-room`:
 
 > **Cull & Summarize — {topic} — {date}**
 
