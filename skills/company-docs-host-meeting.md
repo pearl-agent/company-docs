@@ -80,15 +80,15 @@ Use when topic is provided but attendees are missing:
 
 For **each attendee**, post a **separate top-level message** in `#agent-conference-room`:
 
-> **{topic} — <@{AgentSlackID}>'s thread — {date}**
+> **{topic} — {AgentName}'s thread — {date}**
 
-This creates one thread per agent. The `<@SlackID>` mention in the top-level message ensures the agent is notified and responds *in this thread*.
+This creates one thread per agent. Use the agent's plain name — no `<@>` tag here.
 
-Then immediately post the **first reply** in that agent's thread with their instructions.
+Then immediately post the **first reply** in that agent's thread with their instructions. The reply is where the real tag goes — this is the single notification the OP receives.
 
 **Tagging rules:**
-- The top-level thread message: use a real `<@SlackID>` tag for the OP — this is intentional, it's their thread.
-- The kickoff reply (instructions): use a real `<@SlackID>` tag only for the OP. List all other attendees by **name only** — no `<@>` tags. This prevents premature notifications before the OP is ready to engage them.
+- The top-level thread message: plain name only, no `<@>` tag.
+- The kickoff reply: use a real `<@SlackID>` tag for the OP only. List all other attendees by **name only** — no `<@>` tags. This prevents premature notifications before the OP is ready to engage them.
 - The OP will do the real tagging of other attendees themselves when they post their brainstorm reply.
 
 Look up all IDs and names from `company-docs/roster/agents.md` before posting.
