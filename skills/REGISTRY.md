@@ -15,6 +15,7 @@
 | `company-docs-cron-try-again-soon` | `company-docs-cron-try-again-soon.md` | 2026-04-03 05:53:04 UTC | Retry failed operations with escalating delays |
 | `company-docs-date-now` | `company-docs-date-now.md` | 2026-04-06 02:23:09 UTC | Date/time formats and how to get current time |
 | `company-docs-host-meeting-tree-rules` | `company-docs-host-meeting-tree-rules.md` | 2026-04-09 00:24:59 UTC | Run structured multi-agent brainstorming meetings |
+| `company-docs-host-meeting-tree-ffa` | `company-docs-host-meeting-tree-ffa.md` | 2026-04-09 04:03:00 UTC | Run structured multi-agent brainstorming meetings (free-for-all variant) |
 | `company-docs-skill-add-or-edit` | `company-docs-skill-add-or-edit.md` | 2026-04-07 05:52:50 UTC | Rules before creating/editing any skill |
 | `company-docs-slack-rules` | `company-docs-slack-rules.md` | 2026-04-03 05:53:04 UTC | When to reply vs stay silent in Slack channels |
 | `company-docs-slack-users` | `company-docs-slack-users.md` | 2026-04-06 02:23:58 UTC | Staff lookup (names, IDs, roles, permissions) |
