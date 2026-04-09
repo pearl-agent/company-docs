@@ -6,18 +6,18 @@
 
 ---
 
-| Skill Name | File | Owner | Version / Last Updated | Description | Consumers |
-|-----------|------|-------|----------------------|-------------|-----------|
-| `company-docs-cron-log` | `company-docs-cron-log.md` | George | 2026-04-03 | Set up daily/weekly/monthly activity logging crons | All agents |
-| `company-docs-cron-log-lookup` | `company-docs-cron-log-lookup.md` | George | 2026-04-03 | Look up any agent's historical activity logs | All agents |
-| `company-docs-cron-set-reminder` | `company-docs-cron-set-reminder.md` | George | 2026-04-03 | Timed reminders and delayed follow-ups via cron | All agents |
-| `company-docs-cron-sync` | `company-docs-cron-sync.md` | George | 2026-04-03 | Hourly repo sync, updates local pointer skills | All agents |
-| `company-docs-cron-try-again-soon` | `company-docs-cron-try-again-soon.md` | George | 2026-04-03 | Retry failed operations with escalating delays | All agents |
-| `company-docs-date-now` | `company-docs-date-now.md` | George | 2026-04-03 | Date/time formats and how to get current time | All agents |
-| `company-docs-host-meeting` | `company-docs-host-meeting.md` | George | 2026-04-06 | Run structured multi-agent brainstorming meetings | George (primary), any agent can trigger |
-| `company-docs-skill-add-or-edit` | `company-docs-skill-add-or-edit.md` | George | 2026-04-03 | Rules before creating/editing any skill | All agents |
-| `company-docs-slack-rules` | `company-docs-slack-rules.md` | George | 2026-04-03 | When to reply vs stay silent in Slack channels | All agents |
-| `company-docs-slack-users` | `company-docs-slack-users.md` | Pearl | 2026-04-03 | Staff lookup (names, IDs, roles, permissions) | All agents |
+| Skill Name | File | Last Updated | Description |
+|-----------|------|-------------|-------------|
+| `company-docs-cron-log` | `company-docs-cron-log.md` | 2026-04-05 03:42:11 UTC | Set up daily/weekly/monthly activity logging crons |
+| `company-docs-cron-log-lookup` | `company-docs-cron-log-lookup.md` | 2026-04-05 02:10:48 UTC | Look up any agent's historical activity logs |
+| `company-docs-cron-set-reminder` | `company-docs-cron-set-reminder.md` | 2026-04-06 02:23:09 UTC | Timed reminders and delayed follow-ups via cron |
+| `company-docs-cron-sync` | `company-docs-cron-sync.md` | 2026-04-04 02:15:16 UTC | Hourly repo sync, updates local pointer skills |
+| `company-docs-cron-try-again-soon` | `company-docs-cron-try-again-soon.md` | 2026-04-03 05:53:04 UTC | Retry failed operations with escalating delays |
+| `company-docs-date-now` | `company-docs-date-now.md` | 2026-04-06 02:23:09 UTC | Date/time formats and how to get current time |
+| `company-docs-host-meeting` | `company-docs-host-meeting.md` | 2026-04-09 00:24:59 UTC | Run structured multi-agent brainstorming meetings |
+| `company-docs-skill-add-or-edit` | `company-docs-skill-add-or-edit.md` | 2026-04-07 05:52:50 UTC | Rules before creating/editing any skill |
+| `company-docs-slack-rules` | `company-docs-slack-rules.md` | 2026-04-03 05:53:04 UTC | When to reply vs stay silent in Slack channels |
+| `company-docs-slack-users` | `company-docs-slack-users.md` | 2026-04-06 02:23:58 UTC | Staff lookup (names, IDs, roles, permissions) |
 
 ---
 
