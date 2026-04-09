@@ -164,7 +164,11 @@ As each OP tags you with their final summary:
    ## {Agent Name}'s Thread Summary
    {verbatim content}
    ```
-3. After saving, check: does the scratch file now contain one summary per attendee? If yes — proceed immediately to Step 4 and delete the meeting-completion timer. If not — save and wait.
+3. After saving, check: does the scratch file now contain one summary per attendee?
+   - If not — save and wait.
+   - If yes:
+     - Cancel all active timers: **thread-nudge-needed**, **nudge-followup** (any), **op-cull-timeout**, and **meeting-completion**
+     - Proceed immediately to Step 4
 
 ---
 
