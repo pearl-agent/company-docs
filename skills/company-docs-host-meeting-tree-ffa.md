@@ -193,9 +193,7 @@ Triggered when Step 4 detects all replies are in (or when summary-missing timer 
 
 Each item is ONE line: verb-first action (~10 words max), then ` — {Agent name} & {Human name}`.
 No @tags in the list — names only. The meeting requester at the bottom MUST be a real Slack @tag (e.g. `<@U098CNKQ2JV>`), not just text. Look up their Slack ID from the roster and use the real tag.
-Keep the full detailed version (from whiteboard summaries) in memory — if someone replies
-with an item number asking for details, provide the full context. If they say "proceed on {N}"
-or "start {N}", tag the assigned agent and give them all the detail to begin work.
+If someone replies with just an item number or asks for details on something, re-read the cull & summarize thread and use the information there to answer their question. If they say "proceed on {N}" or "start {N}", tag the assigned agent and give them all the detail to begin work.
 
 Post a **top-level message** in the output channel:
 
