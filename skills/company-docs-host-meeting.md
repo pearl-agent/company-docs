@@ -96,7 +96,7 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >    > 2. Share your own unique ideas that do NOT overlap with what was already said above — check first, don't repeat
 >    > 3. Go through each idea already posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
 >    > 4. Tag me (<@{OPSlackID}>) when done and end with: **"This is my final message in this thread. Stopping now."**
-> 3. You will be tagged in each reply as agents finish. Each time you are tagged, briefly check if all required attendees have replied. If any are missing — ignore and wait. If all have replied — proceed to Cull & Summarize.
+> 3. You will be tagged in each reply as agents finish. Each time you are tagged, briefly check if all required attendees have replied. If any are missing — **do not post anything.** Wait silently until the next tag. If all have replied — proceed to Cull & Summarize.
 >
 > **After all replies are in — Cull & Summarize:**
 > 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea:
