@@ -29,7 +29,7 @@ Received from meeting requester:
 - **Output format** — `list` (default). More formats may be added later.
 - **Output length** — `full` (default, no limit) or `max N` (cap at N items)
 
-If any parameter is missing from the request, use the templates below to ask. Always look up the current eligible agent names from `company-docs/roster/agents.md` — never hardcode or guess the list. Only apply defaults if the requester explicitly says so.
+If any parameter is missing from the request, use the templates below to ask. Always look up the current eligible agent names from `company-docs/roster/agents.md` — never hardcode or guess the list. If the requester still hasn't provided the missing info after one follow-up, apply defaults and proceed.
 
 ### Prompt — Missing parameters: topic + attendees
 
