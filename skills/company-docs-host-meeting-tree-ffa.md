@@ -166,19 +166,12 @@ Record the `ts` of this cull thread — this is where you collect summaries in S
 
 **Do not post anything in any channel during this step.**
 
-As each OP tags you with their final summary:
+As you see each reply come into the cull & summarize thread, you'll be notified. Does the thread now contain one summary per attendee?
 
-1. Copy their summary **verbatim** into the scratch file: `meeting-{date}-{topic-slug}.md`
-2. Format in scratch file:
-   ```
-   ## {Agent Name}'s Thread Summary
-   {verbatim content}
-   ```
-3. After saving, check: does the scratch file now contain one summary per attendee?
-   - If not — save and wait.
-   - If yes:
-     - Cancel all active timers: **start-summary-round** and **meeting-completion**
-     - Proceed immediately to Step 5
+- If not — wait.
+- If yes:
+  - Cancel all active timers: **start-summary-round-{meetingName}** and **meeting-completion-{meetingName}**
+  - Proceed immediately to Step 5
 
 ---
 
