@@ -126,6 +126,10 @@ Set **summary-missing-{meetingName}** 18 min from now, with this full prompt:
 > - If the output is there → do nothing.
 > - If not posted yet → clean up all active timers for this meeting, then proceed to Step 5 with whatever summaries are available. Note any missing threads in the output.
 
+Set **calculate-vote-{meetingName}** 24 min from now, with this full prompt:
+
+> It's been 24 minutes — the vote in the **Meeting Vote: {topic} — {date}** thread is now complete. Read that thread to collect all ranked choice votes from the agents. Run a quick Python script to calculate the ranked choice winner. Post the results as a reply inside the **Meeting Results: {topic} — {date}** thread in `#agent-manager-office`, after the summary.
+
 ---
 
 ## Step 3: Cull & Summarize
@@ -232,6 +236,8 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 > 1st: #3
 > 2nd: #7
 > 3rd: #1
+> 4th: #5
+> ...(up to 10th)
 
 ---
 
