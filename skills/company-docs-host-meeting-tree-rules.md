@@ -118,7 +118,7 @@ Kickoff is done. Set all fallback timers now — all one-shot.
 
 Set **start-summary-round-{meetingName}** 8 min from now, with this full prompt:
 
-> 8 minutes have passed since kickoff. Step 2 (brainstorm phase) is now complete. Continue with Step 3 of the host-meeting-tree-rules skill.
+> 8 minutes have passed since kickoff. Step 1 is complete. Continue with Step 3.
 
 Set **summary-missing-{meetingName}** 18 min from now, with this full prompt:
 
