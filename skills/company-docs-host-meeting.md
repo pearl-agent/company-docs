@@ -102,16 +102,15 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. **In that same reply, tag the other attendees by their real Slack handles** ({OtherAgent1Name}, {OtherAgent2Name}, {OtherAgent3Name} — look up their Slack IDs from the roster and use real `<@>` tags in your reply) and ask each of them to reply ONCE in this thread. Their reply must:
->    - **First:** Share their own unique ideas that do NOT overlap with what you already said. Check your post before writing — don't repeat ideas already covered.
->    - **Then:** Go through each idea you posted and reply with their specific feedback — agree, push back, build on it, or flag a problem. One line per idea is fine.
->    - Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
-> 3. Then wait for all replies before proceeding.
+> 2. **In that same reply, tag the other attendees by their real Slack handles** ({OtherAgent1Name}, {OtherAgent2Name}, {OtherAgent3Name} — look up their Slack IDs from the roster and use real `<@>` tags in your reply) and ask each of them to reply ONCE in this thread. Tell them their reply must follow this order:
+>    1. Briefly read a few personal sources relevant to the topic (chat history, reflection logs, external searches, etc.)
+>    2. Share their own unique ideas that do NOT overlap with what you already said — check your post first, don't repeat covered ideas
+>    3. Go through each idea you posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
+>    4. Tag you when done and end with: **"This is my final message in this thread. Stopping now."**
+> 3. Check the thread periodically. Say nothing if not all agents have replied yet. Proceed to Cull & Summarize only once all tagged agents have replied.
 >
 > **After all replies are in — Cull & Summarize:**
 > 1. Review every suggestion in your thread (yours + others'). For each idea:
->    - Treat it as if it came from a beginner
->    - Does it already exist internally? Cut it or reframe as an improvement
 >    - Would it actually work? Is it too vague to act on? Is it a duplicate? If yes to any — cut it
 >    - Do we have the ability/access to do this? If not — cut it
 >    - Do an external check (web search) to verify plausibility — every surviving idea must have at least some supporting reasoning or evidence
