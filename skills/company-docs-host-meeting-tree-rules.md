@@ -115,21 +115,6 @@ Repeat for every attendee. Each agent gets their own top-level message and their
 
 Kickoff is done. Set all fallback timers now — all one-shot.
 
-Set **thread-nudge-needed-{meetingName}** 9 min from now, with this full prompt:
-
-> Read each thread to check who has replied.
-- All expected non-OP attendees replied → do nothing.
-- Replies missing → nudge only the agents who haven't replied yet:
-  - Post in the thread:
-    > <@{NonResponderSlackID}> — reminder to reply in {AgentName}'s thread on {topic}. One reply with your takes, tag {AgentName} with a real `<@>` tag when done, end with "This is my final message in this thread. Stopping now."
-  - Then set **{meetingName}-{AgentName}-nudge-followup** for 3 minutes with this full prompt:
-    > {NonResponderName} didn't respond to {AgentName}'s thread on {topic}. We waited for a bit now, check if they've responded.
-    > - Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
-    > - If {NonResponderName} replied → do nothing.
-    > - If {NonResponderName} still hasn't replied AND the OP hasn't posted their cull summary yet → post in the thread:
-    >   > <@{ThreadOPAgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize instructions now.
-    > - If {NonResponderName} still hasn't replied but the OP already summarized → do nothing.
-
 Set **op-cull-timeout-{meetingName}** 15 min from now, with this full prompt:
 
 > 15 minutes have passed since kickoff. Check each thread to see if the OP has posted their cull summary.
