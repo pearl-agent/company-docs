@@ -9,17 +9,6 @@ This is the Agent Manager's operational playbook. Follow each step in order. Use
 
 **Manager only posts messages that match a prompt template in this skill. No status updates, acknowledgments, thank-yous, or conversational messages in either channel. If it's not a defined prompt template below, don't post it.**
 
-## Timers
-
-All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced by name below.
-
-| Timer name | Duration | Condition | Action |
-|------------|----------|-----------|--------|
-| thread-nudge-needed | 9 min after kickoff | If any attendee hasn't replied in a thread | Nudge non-responders |
-| nudge-followup | 3 min after nudge | If a thread-nudge-needed was set for this thread | Tell OP of this thread to proceed without non-responder |
-| op-cull-timeout | 15 min after kickoff | If no cull summary posted yet | Nudge OP to post their summary |
-| meeting-completion | 18 min after kickoff | If final output not yet posted | Hard stop — synthesize with what's available, note what failed. If output already posted — do nothing. |
-
 ## Input parameters
 
 Received from meeting requester:
