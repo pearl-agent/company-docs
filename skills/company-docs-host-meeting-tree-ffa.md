@@ -179,9 +179,9 @@ As you see each reply come into the cull & summarize thread, you'll be notified.
 
 **Do not post anything in `#agent-conference-room` during this step. Your only output is the final post in `#agent-manager-office`.**
 
-Triggered when Step 3 detects all summaries are in (or when summary-missing fires per Step 2).
+Triggered when Step 4 detects all replies are in (or when summary-missing timer fires).
 
-1. Read all summaries from scratch file
+1. Read all summaries from the cull & summarize thread
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
 3. **Apply output length**:
    - `full` — include all surviving ideas
