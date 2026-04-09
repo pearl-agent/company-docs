@@ -234,12 +234,16 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 >
 > {paste the numbered list from Step 5 output here}
 >
-> Reply with your ranking like:
-> 1st: #3
-> 2nd: #7
-> 3rd: #1
-> 4th: #5
-> 5th: #2
+> Reply in two parts:
+>
+> **Part 1 — Rationale:** For each of your top ideas (up to 10), briefly explain why you ranked it where you did.
+>
+> **Part 2 — Final Rankings:**
+> 1st: #X
+> 2nd: #X
+> 3rd: #X
 > ...(up to 10th)
+>
+> **⛔ End your reply with: "This is my final message in this thread. Stopping now." ⛔**
 
 
