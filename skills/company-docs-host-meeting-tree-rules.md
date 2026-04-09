@@ -118,7 +118,7 @@ Kickoff is done. Set all fallback timers now — all one-shot.
 
 Set **start-summary-round-{meetingName}** 8 min from now, with this full prompt:
 
-> 8 minutes have passed since kickoff. Post Step 3 now — create the Cull & Summarize thread per the template in Step 3.
+> 8 minutes have passed since kickoff. Step 2 (brainstorm phase) is now complete. Continue with Step 3 of the host-meeting-tree-rules skill.
 
 Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
