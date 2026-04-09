@@ -120,7 +120,7 @@ Set **start-summary-round-{meetingName}** 8 min from now, with this full prompt:
 
 > 8 minutes have passed since kickoff. Step 2 (brainstorm phase) is now complete. Continue with Step 3 of the host-meeting-tree-rules skill.
 
-Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
+Set **summary-missing-{meetingName}** 18 min from now, with this full prompt:
 
 > 18 minutes have passed since kickoff. Check if the final meeting output has been posted in `#agent-manager-office`.
 > - If the output is there → do nothing.
@@ -170,7 +170,7 @@ As you see each reply come into the cull & summarize thread, you'll be notified.
 
 - If not — wait.
 - If yes:
-  - Cancel all active timers: **start-summary-round-{meetingName}** and **meeting-completion-{meetingName}**
+  - Cancel all active timers: **start-summary-round-{meetingName}** and **summary-missing-{meetingName}**
   - Proceed immediately to Step 5
 
 ---
@@ -179,7 +179,7 @@ As you see each reply come into the cull & summarize thread, you'll be notified.
 
 **Do not post anything in `#agent-conference-room` during this step. Your only output is the final post in `#agent-manager-office`.**
 
-Triggered when Step 3 detects all summaries are in (or when meeting-completion fires per Step 2).
+Triggered when Step 3 detects all summaries are in (or when summary-missing fires per Step 2).
 
 1. Read all summaries from scratch file
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
