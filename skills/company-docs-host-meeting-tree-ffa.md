@@ -112,7 +112,7 @@ Repeat for every attendee. Each agent gets their own top-level message and their
 
 ---
 
-## Step 2: Set Fallback Timers
+## Step 2: Set Timer and Fallback
 
 Kickoff is done. Set all fallback timers now — all one-shot.
 
