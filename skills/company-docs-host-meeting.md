@@ -13,14 +13,12 @@ This is the Agent Manager's operational playbook. Follow each step in order. Use
 
 All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced by name below.
 
-| Timer name | Duration | Purpose |
-|------------|----------|---------|
-| thread-nudge-needed | 9 min after kickoff | Nudge attendees who haven't replied in a thread |
-| nudge-followup | 6 min after nudge | Tell OP to proceed without non-responder |
-| op-cull-timeout | 7 min after last reply in thread | Nudge OP to post their summary |
-| meeting-completion | 22 min after kickoff | Hard stop — synthesize whatever is available |
-
-**Timer chain note:** meeting-completion must never fire before the full straggler chain can complete. Minimum safe value = thread-nudge-needed + nudge-followup + cull buffer (9 + 6 + 7 = 22 min). Do not reduce meeting-completion below this floor.
+| Timer name | Duration | Condition | Action |
+|------------|----------|-----------|--------|
+| thread-nudge-needed | 9 min after kickoff | If any attendee hasn't replied in a thread | Nudge non-responders |
+| nudge-followup | 3 min after nudge | If nudged | Tell OP to proceed without non-responder |
+| op-cull-timeout | 15 min after kickoff | If no cull summary posted yet | Nudge OP to post their summary |
+| meeting-completion | 18 min after kickoff | If final output not yet posted | Hard stop — synthesize with what's available, note what failed. If output already posted — do nothing. |
 
 ## Input parameters
 
@@ -180,11 +178,11 @@ As each OP tags you with their final summary:
 
 ## Step 4: Synthesize & Post Results
 
-**This step runs exactly once, triggered ONLY by the meeting-completion timer.**
+**Triggered ONLY by the meeting-completion timer.**
 
-No other timer or event triggers synthesis. When the meeting-completion timer fires:
+When it fires: first check if the final output has already been posted in `#agent-manager-office`. If yes — do nothing, stop here. If not — proceed:
 
-1. Read all summaries from whiteboard scratch file
+1. Read all summaries from scratch file (use whatever is available — note any missing threads in the output)
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
 3. **Apply output length**:
    - `full` — include all surviving ideas
