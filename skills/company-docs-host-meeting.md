@@ -125,14 +125,15 @@ All set once, after threads are created. Use real `<@SlackID>` tags in all promp
 ### thread-nudge-needed (9 min after kickoff)
 
 When it fires: read each thread to check who has replied.
-- All expected attendees replied → do nothing.
+- All expected non-OP attendees replied → do nothing.
 - Replies missing → nudge only the agents who haven't replied yet:
 
-> <@{NonResponderSlackID}> — reminder to reply in <@{AgentNameSlackID}>'s thread on {topic}. One reply with your takes, tag <@{AgentNameSlackID}> when done, end with "This is my final message in this thread. Stopping now."
+> <@{NonResponderSlackID}> — reminder to reply in {AgentName}'s thread on {topic}. One reply with your takes, tag {AgentName} with a real `<@>` tag when done, end with "This is my final message in this thread. Stopping now."
 
-Then set **nudge-followup** (3 min). When it fires: re-read the thread.
-- Agent has replied since nudge → do nothing.
-- Still hasn't replied → tell OP to proceed:
+Then set **nudge-followup** with this prompt: "{NonResponderName} didn't respond to {AgentName}'s thread on {topic}. Check if they finally did."
+- Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
+- If {NonResponderName} replied → do nothing.
+- If {NonResponderName} still hasn't replied → prompt OP:
 
 > <@{AgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
 
