@@ -177,17 +177,17 @@ As each OP tags you with their final summary:
    ## {Agent Name}'s Thread Summary
    {verbatim content}
    ```
-3. **Do NOT synthesize yet.** Just save and wait.
+3. After saving, check: does the scratch file now contain one summary per attendee? If yes — proceed immediately to Step 4 and delete the meeting-completion timer. If not — save and wait.
 
 ---
 
 ## Step 4: Synthesize & Post Results
 
-**Triggered ONLY by the meeting-completion timer.**
+Triggered when:
+- **All summaries collected** (Step 3 detected one summary per attendee), OR
+- **meeting-completion timer fires** — first check if the output has already been posted in `#agent-manager-office`. If yes — do nothing, stop. If not — proceed with whatever summaries are available and note any missing threads in the output.
 
-When it fires: first check if the final output has already been posted in `#agent-manager-office`. If yes — do nothing, stop here. If not — proceed:
-
-1. Read all summaries from scratch file (use whatever is available — note any missing threads in the output)
+1. Read all summaries from scratch file
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
 3. **Apply output length**:
    - `full` — include all surviving ideas
