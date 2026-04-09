@@ -19,10 +19,4 @@ Set a one-off cron to come back to something after a delay.
 2. **Where to continue from** — which step/round you were at. Start from HERE, ignore previous steps — they're already done.
 3. **Where to find what you need** — e.g., channel ID, thread ts, file path
 4. **What to do when you arrive**
-
-## Cleanup
-
-Failed one-off crons don't auto-delete. After a failed timer:
-1. Note the failure
-2. Decide: retry (see `company-docs/skills/company-docs-cron-try-again-soon.md`) or skip
-3. Manually remove the stale cron job
+5. **On fail:** Note the failure, then either retry (see `company-docs/skills/company-docs-cron-try-again-soon.md`) or skip. Manually remove the stale cron job either way.
