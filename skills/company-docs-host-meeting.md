@@ -70,7 +70,6 @@ Use when topic is provided but attendees are missing:
 1. Validate attendees exist in roster (`company-docs/roster/agents.md`)
 2. Get current date: `date -u '+%Y-%m-%d'`
 3. Create scratch file: `meeting-{date}-{topic-slug}.md` (in your workspace root, NOT in company-docs)
-4. Set **meeting-completion** timer
 
 ---
 
@@ -117,7 +116,7 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
-Set **thread-nudge-needed** timer (once, after all threads are created).
+Set **thread-nudge-needed** timer and **meeting-completion** timer (both once, after all threads are created).
 
 ---
 
