@@ -244,6 +244,6 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 > 3rd: #X
 > ...(up to 10th)
 >
-> **⛔ End your reply with: "This is my final message in this thread. Stopping now." ⛔**
+> **⛔ End your reply with: "I understand our vote is not a greenlight and I will not act until choice is human-confirmed. This is my final message in this thread. Stopping now." ⛔**
 
 
