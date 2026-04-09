@@ -102,7 +102,9 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >    > Go through each idea already posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
 >    >
 >    > **Part 3 — Closure:**
->    > Tag me (<@{OPSlackID}>) and end with: **"This is my final message in this thread. Stopping now."**
+>    > Tag me (<@{OPSlackID}>) and end with EXACTLY this line — do NOT omit it, do NOT rephrase it:
+>    >
+>    > **⛔ "This is my final message in this thread. Stopping now." ⛔**
 > 3. You will be tagged in each reply as agents finish. Each time you are tagged, briefly check if all required attendees have replied. If any are missing — **do not post anything.** Wait silently until the next tag. If all have replied — proceed to Cull & Summarize.
 >
 > **After all replies are in — Cull & Summarize:**
