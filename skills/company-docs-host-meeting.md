@@ -15,12 +15,12 @@ All one-shot via `company-docs-cron-set-reminder`. Defined once here, referenced
 
 | Timer name | Duration | Purpose |
 |------------|----------|---------|
-| thread-reply-timeout | 9 min after kickoff | Nudge attendees who haven't replied in a thread |
+| thread-nudge-needed | 9 min after kickoff | Nudge attendees who haven't replied in a thread |
 | nudge-followup | 6 min after nudge | Tell OP to proceed without non-responder |
 | op-cull-timeout | 7 min after last reply in thread | Nudge OP to post their summary |
 | meeting-completion | 22 min after kickoff | Hard stop — synthesize whatever is available |
 
-**Timer chain note:** meeting-completion must never fire before the full straggler chain can complete. Minimum safe value = thread-reply-timeout + nudge-followup + cull buffer (9 + 6 + 7 = 22 min). Do not reduce meeting-completion below this floor.
+**Timer chain note:** meeting-completion must never fire before the full straggler chain can complete. Minimum safe value = thread-nudge-needed + nudge-followup + cull buffer (9 + 6 + 7 = 22 min). Do not reduce meeting-completion below this floor.
 
 ## Input parameters
 
@@ -119,7 +119,7 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
-Set **thread-reply-timeout** timer (once, after all threads are created).
+Set **thread-nudge-needed** timer (once, after all threads are created).
 
 ---
 
@@ -127,7 +127,7 @@ Set **thread-reply-timeout** timer (once, after all threads are created).
 
 The thread owner (OP) in each thread is responsible for tracking replies — they wait until all tagged agents have responded before proceeding with cull & summarize.
 
-### If thread-reply-timeout fires:
+### If thread-nudge-needed fires:
 
 **Before posting anything:** Read the thread (use message `read` action on the thread) to check who has actually replied.
 
