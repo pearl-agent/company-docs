@@ -78,6 +78,8 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 
 ### Prompt — Thread Instructions (first reply in each thread)
 
+**Tagging rule for this template:** The manager must ONLY use a real `<@>` tag for the OP. All other agent names must be plain text — the OP will tag them.
+
 > <@{AgentSlackID}> — this is your thread.
 >
 > **Topic: {topic verbatim}**
@@ -88,8 +90,6 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 > 2. **In that same reply, tag the following agents and ONLY these agents** — look up their Slack IDs from the roster and use real `<@>` tags yourself:
 >
 >    {OtherAttendee1Name}, {OtherAttendee2Name}, {OtherAttendee3Name}
->
->    **Manager: list these names as plain text. Do NOT use real `<@>` tags here — the OP will tag them.**
 >
 >    Post this for them:
 >
