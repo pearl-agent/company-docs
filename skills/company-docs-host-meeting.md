@@ -95,8 +95,8 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 
 > <@{AgentSlackID}> — this is your thread.
 >
-> **Topic: {topic}**
-> {If the requester provided additional context, include a brief expansion. Otherwise restate the topic clearly.}
+> **Topic: {topic verbatim}**
+> {Only expand if the requester explicitly asked you to, e.g. "please expound on this" or "please research this first". Otherwise post the topic exactly as given — no paraphrasing.}
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
