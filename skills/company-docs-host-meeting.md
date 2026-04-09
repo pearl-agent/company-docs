@@ -109,7 +109,7 @@ Repeat for every attendee. Each agent gets their own top-level message and their
 
 ## Step 2: Set Fallback Timers
 
-Kickoff is done. Set all fallback timers now — all one-shot, all from kickoff.
+Kickoff is done. Set all fallback timers now — all one-shot.
 
 ### thread-nudge-needed (9 min after kickoff)
 
