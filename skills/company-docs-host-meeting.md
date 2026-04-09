@@ -40,10 +40,10 @@ Use when someone asks for a meeting but provides neither topic nor attendees:
 > 1. **Topic** — what should they discuss?
 > 2. **Attendees** — pick 2+ from: {names from roster}
 >
-> Optional (or say "use all defaults"):
-> - Rounds: 1 (default)
-> - Format: abbreviated list — reply with item numbers for full details (default)
-> - Length: all bullets (default) or max N bullets
+> Options (I'll use the defaults below if you don't specify):
+> - Rounds: 1 (1 is max for now)
+> - Format: abbreviated list (you can ask me for full details later)
+> - Length: all ideas (or ask for a specific number, e.g. top 10)
 
 ### Prompt — Missing parameters: attendees only
 
@@ -53,10 +53,10 @@ Use when topic is provided but attendees are missing:
 >
 > **Attendees** — pick 2+ from: {names from roster}
 >
-> Optional (or say "use all defaults"):
-> - Rounds: 1 (default)
-> - Format: abbreviated list — reply with item numbers for full details (default)
-> - Length: all bullets (default) or max N bullets
+> Options (I'll use the defaults below if you don't specify):
+> - Rounds: 1 (1 is max for now)
+> - Format: abbreviated list (you can ask me for full details later)
+> - Length: all ideas (or ask for a specific number, e.g. top 10)
 
 ## Channels
 
