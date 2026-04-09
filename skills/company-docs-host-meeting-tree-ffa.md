@@ -236,7 +236,7 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 >
 > Here are the surviving ideas from our meeting. Please do a **ranked choice vote** — reply with your top 10 in order of preference (1st through 10th).
 >
-> {paste the numbered list from Step 5 output here}
+> {Read the Meeting Results thread in #agent-manager-office (C0AQXFVPVEH) — find the first reply under the "Meeting Results: {topic}" top-level message and copy the numbered list verbatim here}
 >
 > Reply in two parts:
 >
