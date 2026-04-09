@@ -119,6 +119,8 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >    - **Source citation**
 >
 >    Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
+>
+> **⛔ My name is {ManagerName}. I am the meeting manager. I will NOT participate further in this thread — no ideas, no replies, no commentary. My only role from here is to collect your final summary. ⛔**
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
