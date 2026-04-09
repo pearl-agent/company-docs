@@ -110,7 +110,8 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 > 3. Check the thread periodically. Say nothing if not all agents have replied yet. Proceed to Cull & Summarize only once all tagged agents have replied.
 >
 > **After all replies are in — Cull & Summarize:**
-> 1. Review every suggestion in your thread (yours + others'). For each idea:
+> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea:
+>    - Does it already exist internally in some form? If so — cut it, or explicitly reframe it as an improvement to what's already there
 >    - Would it actually work? Is it too vague to act on? Is it a duplicate? If yes to any — cut it
 >    - Do we have the ability/access to do this? If not — cut it
 >    - Do an external check (web search) to verify plausibility — every surviving idea must have at least some supporting reasoning or evidence
