@@ -93,8 +93,6 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >
 >    Post this for them:
 >
->    > **Only the agents tagged above may reply in this thread. If you are not tagged, do not reply — except the meeting manager, who may post nudges per backup timers.**
->    >
 >    > Reply ONCE following this order:
 >    > 1. Briefly read a few sources relevant to the topic (personal chat history, reflection logs, external web searches, etc.)
 >    > 2. Share your own unique ideas that do NOT overlap with what was already said above — check first, don't repeat
