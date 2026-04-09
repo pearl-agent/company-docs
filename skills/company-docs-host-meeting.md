@@ -120,44 +120,37 @@ Set **thread-nudge-needed**, **op-cull-timeout**, and **meeting-completion** tim
 
 ---
 
-## Step 2: Handle Stragglers
+## Step 2: Set Fallback Timers
 
-The thread owner (OP) in each thread is responsible for tracking replies — they wait until all tagged agents have responded before proceeding with cull & summarize.
+All set once, after threads are created. Use real `<@SlackID>` tags in all prompts. Look up IDs from `company-docs/roster/agents.md`.
 
-### If thread-nudge-needed fires:
+### thread-nudge-needed (9 min after kickoff)
 
-**Before posting anything:** Read the thread (use message `read` action on the thread) to check who has actually replied.
-
-- If **all expected attendees have replied** → do nothing. No nudge needed.
-- If **replies are missing** → nudge only the agents who have NOT replied yet.
-
-#### Prompt — Nudge non-responder (post in the thread they haven't replied in)
-
-Use real `<@SlackID>` tags for all mentions. Look up IDs from `company-docs/roster/agents.md`.
+When it fires: read each thread to check who has replied.
+- All expected attendees replied → do nothing.
+- Replies missing → nudge only the agents who haven't replied yet:
 
 > <@{NonResponderSlackID}> — reminder to reply in <@{AgentNameSlackID}>'s thread on {topic}. One reply with your takes, tag <@{AgentNameSlackID}> when done, end with "This is my final message in this thread. Stopping now."
 
-Set **nudge-followup** timer. If still no reply when it fires:
-
-**Before posting anything:** Re-read the thread to confirm the agent still hasn't replied.
-
-- If they **have replied since the nudge** → do nothing. No message needed.
-- If they **still haven't replied** → tell OP to proceed.
-
-#### Prompt — Tell OP to proceed (post in their thread)
+Then set **nudge-followup** (3 min). When it fires: re-read the thread.
+- Agent has replied since nudge → do nothing.
+- Still hasn't replied → tell OP to proceed:
 
 > <@{AgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
 
-### If op-cull-timeout fires and OP hasn't posted their summary:
+### op-cull-timeout (15 min after kickoff)
 
-**Before posting anything:** Re-read the thread to confirm the OP has not yet posted a cull summary.
-
-- If the **summary is already there** → do nothing.
-- If it's **still missing** → nudge the OP.
-
-#### Prompt — Nudge OP (post in their thread)
+When it fires: re-read each thread to check if the OP has posted a cull summary.
+- Summary is there → do nothing.
+- Still missing → nudge the OP:
 
 > <@{AgentNameSlackID}> — wrap up your thread now. Post your culled summary with whatever you have and tag <@{ManagerSlackID}> in that message.
+
+### meeting-completion (18 min after kickoff)
+
+When it fires: check if the final output has already been posted in `#agent-manager-office`.
+- Output is there → do nothing.
+- Not posted yet → proceed to Step 4 with whatever summaries are available. Note any missing threads in the output.
 
 ---
 
@@ -177,9 +170,7 @@ As each OP tags you with their final summary:
 
 ## Step 4: Synthesize & Post Results
 
-Triggered when:
-- **All summaries collected** (Step 3 detected one summary per attendee), OR
-- **meeting-completion timer fires** — first check if the output has already been posted in `#agent-manager-office`. If yes — do nothing, stop. If not — proceed with whatever summaries are available and note any missing threads in the output.
+Triggered when Step 3 detects all summaries are in (or when meeting-completion fires per Step 2).
 
 1. Read all summaries from scratch file
 2. **Eliminate duplicates** across threads — same idea from different threads = keep the version with stronger evidence
