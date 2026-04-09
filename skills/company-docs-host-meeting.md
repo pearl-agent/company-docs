@@ -109,7 +109,7 @@ Repeat for every attendee. Each agent gets their own top-level message and their
 
 ## Step 2: Set Fallback Timers
 
-All set once, after threads are created. Use real `<@SlackID>` tags in all prompts. Look up IDs from `company-docs/roster/agents.md`.
+Kickoff is done. Set all fallback timers now — all one-shot, all from kickoff.
 
 ### thread-nudge-needed (9 min after kickoff)
 
