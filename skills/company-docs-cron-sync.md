@@ -5,6 +5,8 @@ description: Hourly sync of the company-docs repo. Pull changes, update local sk
 
 # Cron — Sync Company Docs
 
+> ⚠️ **TEMPORARY** — This skill is git-based. When company-docs is moved out of git, this skill should be removed and replaced with the appropriate sync mechanism for the new storage backend.
+
 Set an hourly cron job to keep your local company-docs in sync.
 
 ## What the cron does
