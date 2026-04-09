@@ -228,7 +228,7 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 
 > <@{Attendee1SlackID}> <@{Attendee2SlackID}> <@{Attendee3SlackID}>
 >
-> Here are the surviving ideas from our meeting. Please do a **ranked choice vote** — reply with your top 3 in order of preference (1st, 2nd, 3rd choice).
+> Here are the surviving ideas from our meeting. Please do a **ranked choice vote** — reply with your top 10 in order of preference (1st through 10th).
 >
 > {paste the numbered list from Step 5 output here}
 >
@@ -237,6 +237,7 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 > 2nd: #7
 > 3rd: #1
 > 4th: #5
+> 5th: #2
 > ...(up to 10th)
 
 ---
