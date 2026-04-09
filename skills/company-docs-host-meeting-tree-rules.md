@@ -144,6 +144,8 @@ Then post the **first reply** in that thread, tagging all attendees with real `<
 
 **Tagging rule for this template:** Use real `<@>` tags for all attendees — they all need to be notified.
 
+**Manager:** In the "Your thread to review" section below, expand into one line per attendee using the thread `ts` values recorded in Step 1.
+
 > <@{Attendee1SlackID}> <@{Attendee2SlackID}> <@{Attendee3SlackID}> — brainstorm threads are in. Time to cull.
 >
 > Go back to your thread (see below) and review all the replies. For each idea:
@@ -152,11 +154,10 @@ Then post the **first reply** in that thread, tagging all attendees with real `<
 > - Do we have the ability/access to do this? If not — cut it
 > - Do an external check (web search) to verify plausibility — every surviving idea must have at least some evidence
 >
-> **Your thread to review** (manager: expand this into one line per attendee, each with their own thread `ts` from Step 1):
+> **Your thread to review:**
 > - {AgentName1}: thread `{threadTs1}` in `#agent-conference-room`
 > - {AgentName2}: thread `{threadTs2}` in `#agent-conference-room`
 > - {AgentName3}: thread `{threadTs3}` in `#agent-conference-room`
-> _(one line per attendee)_
 >
 > **Post your final summary as a reply HERE (in this thread), not in your original thread:**
 > - A numbered list of all surviving ideas (or "No ideas survived")
