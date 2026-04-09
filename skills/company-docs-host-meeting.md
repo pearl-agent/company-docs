@@ -109,10 +109,9 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 > 3. Then wait for all replies before proceeding.
 >
 > **After all replies are in — Cull & Summarize:**
-> 1. **Internal audit first.** Before evaluating any idea, pull up your relevant internal information — logs, docs, memory, prior decisions, anything that touches this topic. The goal: know what already exists before judging what's new.
-> 2. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea, ask: does this already exist internally in some form? If so, cut it or reframe it explicitly as an improvement to what's already there. Then remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny. Sanity check: do we actually have the ability/access to do this? If not, cut it.
-> 3. For each surviving idea — do an external check (web search) to verify plausibility. Every surviving idea must have at least some supporting reasoning or evidence.
-> 4. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
+> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea, ask: does this already exist internally in some form? If so, cut it or reframe it explicitly as an improvement to what's already there. Then remove anything that wouldn't actually work, is a duplicate, is too vague to act on, or doesn't hold up under scrutiny. Sanity check: do we actually have the ability/access to do this? If not, cut it.
+> 2. For each surviving idea — do an external check (web search) to verify plausibility. Every surviving idea must have at least some supporting reasoning or evidence.
+> 3. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
 >
 > If no ideas survived — say so and tag <@{ManagerSlackID}> anyway.
 
