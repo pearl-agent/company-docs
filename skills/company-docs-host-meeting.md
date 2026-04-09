@@ -84,12 +84,7 @@ This creates one thread per agent. Use the agent's plain name — no `<@>` tag h
 
 Then immediately post the **first reply** in that agent's thread with their instructions. The reply is where the real tag goes — this is the single notification the OP receives.
 
-**Tagging rules:**
-- The top-level thread message: plain name only, no `<@>` tag.
-- The kickoff reply: use a real `<@SlackID>` tag for the OP only. List all other attendees by **name only** — no `<@>` tags. This prevents premature notifications before the OP is ready to engage them.
-- The OP will do the real tagging of other attendees themselves when they post their brainstorm reply.
-
-Look up all IDs and names from `company-docs/roster/agents.md` before posting.
+Look up all Slack IDs and names from `company-docs/roster/agents.md` before posting.
 
 ### Prompt — Thread Instructions (first reply in each thread)
 
