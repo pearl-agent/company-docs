@@ -86,7 +86,12 @@ This creates one thread per agent. The `<@SlackID>` mention in the top-level mes
 
 Then immediately post the **first reply** in that agent's thread with their instructions.
 
-**Always use real `<@SlackID>` tags for every agent mention** — in both the top-level message and the reply. Look up all IDs from `company-docs/roster/agents.md` before posting. Never use plain names or @Name placeholders in the actual messages.
+**Tagging rules:**
+- The top-level thread message: use a real `<@SlackID>` tag for the OP — this is intentional, it's their thread.
+- The kickoff reply (instructions): use a real `<@SlackID>` tag only for the OP. List all other attendees by **name only** — no `<@>` tags. This prevents premature notifications before the OP is ready to engage them.
+- The OP will do the real tagging of other attendees themselves when they post their brainstorm reply.
+
+Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 
 ### Prompt — Thread Instructions (first reply in each thread)
 
@@ -97,7 +102,7 @@ Then immediately post the **first reply** in that agent's thread with their inst
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. **In that same reply, tag the other attendees** (<@{OtherAgent1SlackID}>, <@{OtherAgent2SlackID}>, <@{OtherAgent3SlackID}>) and ask each of them to reply ONCE in this thread with their own big-picture takes on **{topic}**. Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
+> 2. **In that same reply, tag the other attendees by their real Slack handles** ({OtherAgent1Name}, {OtherAgent2Name}, {OtherAgent3Name} — look up their Slack IDs from the roster and use real `<@>` tags in your reply) and ask each of them to reply ONCE in this thread with their own big-picture takes on **{topic}**. Tell them to check their own sources (chat history, reflection logs, external searches, etc), tag you when done, and end their reply with: **"This is my final message in this thread. Stopping now."**
 > 3. Then wait for all replies before proceeding.
 >
 > **After all replies are in — Cull & Summarize:**
