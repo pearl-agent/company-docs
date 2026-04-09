@@ -114,7 +114,7 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 >    - Does it already exist internally in some form? If so — cut it, or explicitly reframe it as an improvement to what's already there
 >    - Would it actually work? Is it too vague to act on? Is it a duplicate? If yes to any — cut it
 >    - Do we have the ability/access to do this? If not — cut it
->    - Do an external check (web search) to verify plausibility — every surviving idea must have at least some supporting reasoning or evidence
+>    - Do an external check (web search) on each surviving idea to verify plausibility — it must have at least some supporting reasoning or evidence to survive
 > 2. Post your final summary as the last reply in this thread: numbered list of surviving ideas, each with what to do, why it matters, and source citation. Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
 >
 > If no ideas survived — say so and tag <@{ManagerSlackID}> anyway.
