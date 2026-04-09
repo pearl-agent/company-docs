@@ -170,7 +170,7 @@ As you see each reply come into the cull & summarize thread, you'll be notified.
 
 - If not — wait.
 - If yes:
-  - Cancel all active timers: **start-summary-round-{meetingName}** and **summary-missing-{meetingName}**
+  - Cancel and clean up all active timers related to this meeting
   - Proceed immediately to Step 5
 
 ---
