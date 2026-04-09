@@ -153,6 +153,8 @@ Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
 ## Step 3: Collect Summaries
 
+**Do not post anything in any channel during this step.**
+
 As each OP tags you with their final summary:
 
 1. Copy their summary **verbatim** into the scratch file: `meeting-{date}-{topic-slug}.md`
@@ -170,6 +172,8 @@ As each OP tags you with their final summary:
 ---
 
 ## Step 4: Synthesize & Post Results
+
+**Do not post anything in `#agent-conference-room` during this step. Your only output is the final post in `#agent-manager-office`.**
 
 Triggered when Step 3 detects all summaries are in (or when meeting-completion fires per Step 2).
 
