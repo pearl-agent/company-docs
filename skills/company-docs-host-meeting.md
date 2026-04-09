@@ -119,12 +119,14 @@ When it fires: read each thread to check who has replied.
 
 > <@{NonResponderSlackID}> — reminder to reply in {AgentName}'s thread on {topic}. One reply with your takes, tag {AgentName} with a real `<@>` tag when done, end with "This is my final message in this thread. Stopping now."
 
-Then set **nudge-followup** with this prompt: "{NonResponderName} didn't respond to {AgentName}'s thread on {topic}. Check if they finally did."
-- Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
-- If {NonResponderName} replied → do nothing.
-- If {NonResponderName} still hasn't replied → prompt OP:
+Then set **nudge-followup** with this full prompt:
 
-> <@{AgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
+> {NonResponderName} didn't respond to {AgentName}'s thread on {topic}. Check if they finally did.
+> - Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
+> - If {NonResponderName} replied → do nothing.
+> - If {NonResponderName} still hasn't replied → post in the thread:
+>
+> > <@{AgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize now.
 
 ### op-cull-timeout (15 min after kickoff)
 
