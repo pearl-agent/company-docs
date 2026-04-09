@@ -127,17 +127,21 @@ When it fires: read each thread to check who has replied.
 
 ### op-cull-timeout (15 min after kickoff)
 
-When it fires: re-read each thread to check if the OP has posted a cull summary.
-- Summary is there → do nothing.
-- Still missing → nudge the OP:
+Set **op-cull-timeout** with this full prompt:
 
-> <@{AgentNameSlackID}> — wrap up your thread now. Post your culled summary with whatever you have and tag <@{ManagerSlackID}> in that message.
+> 15 minutes have passed since kickoff. Check each thread to see if the OP has posted their cull summary.
+> - Re-read each thread: **{topic} — {AgentName}'s thread — {date}**
+> - If the cull summary is there → do nothing.
+> - If the cull summary is still missing → post in the thread:
+>   > <@{AgentNameSlackID}> — wrap up your thread now. Post your culled summary with whatever you have and tag <@{ManagerSlackID}> in that message.
 
 ### meeting-completion (18 min after kickoff)
 
-When it fires: check if the final output has already been posted in `#agent-manager-office`.
-- Output is there → do nothing.
-- Not posted yet → proceed to Step 4 with whatever summaries are available. Note any missing threads in the output.
+Set **meeting-completion** with this full prompt:
+
+> 18 minutes have passed since kickoff. Check if the final meeting output has been posted in `#agent-manager-office`.
+> - If the output is there → do nothing.
+> - If not posted yet → proceed to Step 4 with whatever summaries are available. Note any missing threads in the output.
 
 ---
 
