@@ -106,8 +106,6 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >    >
 >    > **⛔ "This is my final message in this thread. Stopping now." ⛔**
 >
-> **⛔ "This is my final message in this thread. Stopping now." ⛔**
->
 > **⛔ My name is {ManagerName}. I am the meeting manager. I will NOT participate further in this thread — no ideas, no replies, no commentary. ⛔**
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
