@@ -118,13 +118,9 @@ Repeat for every attendee. Each agent gets their own top-level message and their
 
 Kickoff is done. Set all fallback timers now — all one-shot.
 
-Set **op-cull-timeout-{meetingName}** 15 min from now, with this full prompt:
+Set **start-summary-round-{meetingName}** 8 min from now, with this full prompt:
 
-> 15 minutes have passed since kickoff. Check each thread to see if the OP has posted their cull summary.
-> - Re-read each thread: **{topic} — {AgentName}'s thread — {date}**
-> - If the cull summary is there → do nothing.
-> - If the cull summary is still missing → post in the thread:
->   > <@{AgentNameSlackID}> — wrap up your thread now. Post your culled summary with whatever you have and tag <@{ManagerSlackID}> in that message.
+> 8 minutes have passed since kickoff. Post Step 3 now — create the Cull & Summarize thread per the template in Step 3.
 
 Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
@@ -149,7 +145,7 @@ As each OP tags you with their final summary:
 3. After saving, check: does the scratch file now contain one summary per attendee?
    - If not — save and wait.
    - If yes:
-     - Cancel all active timers: **thread-nudge-needed**, **nudge-followup** (any), **op-cull-timeout**, and **meeting-completion**
+     - Cancel all active timers: **start-summary-round** and **meeting-completion**
      - Proceed immediately to Step 5
 
 ---
