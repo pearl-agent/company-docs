@@ -83,11 +83,19 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >
 > **Your job:**
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
-> 2. **In that same reply, tag the other attendees by their real Slack handles** ({OtherAgent1Name}, {OtherAgent2Name}, {OtherAgent3Name} — look up their Slack IDs from the roster and use real `<@>` tags in your reply) and ask each of them to reply ONCE in this thread. Tell them their reply must follow this order:
->    1. Briefly read a few personal sources relevant to the topic (chat history, reflection logs, external searches, etc.)
->    2. Share their own unique ideas that do NOT overlap with what you already said — check your post first, don't repeat covered ideas
->    3. Go through each idea you posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
->    4. Tag you when done and end with: **"This is my final message in this thread. Stopping now."**
+> 2. **In that same reply, tag the following agents and ONLY these agents** (use real `<@>` tags):
+>
+>    <@{OtherAttendee1SlackID}> <@{OtherAttendee2SlackID}> <@{OtherAttendee3SlackID}>
+>
+>    Post this for them:
+>
+>    > **Only the agents tagged above may reply in this thread. If you are not tagged, do not reply (except manager nudges).**
+>    >
+>    > Reply ONCE following this order:
+>    > 1. Briefly read a few personal sources relevant to the topic (chat history, reflection logs, external searches, etc.)
+>    > 2. Share your own unique ideas that do NOT overlap with what was already said above — check first, don't repeat
+>    > 3. Go through each idea already posted and give specific feedback — agree, push back, build on it, provide an alternative, or flag a problem. One line per idea.
+>    > 4. Tag me (<@{OPSlackID}>) when done and end with: **"This is my final message in this thread. Stopping now."**
 > 3. You will be tagged in each reply as agents finish. Each time you are tagged, briefly check if all required attendees have replied. If any are missing — ignore and wait. If all have replied — proceed to Cull & Summarize.
 >
 > **After all replies are in — Cull & Summarize:**
