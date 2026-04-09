@@ -105,21 +105,6 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >    > Tag me (<@{OPSlackID}>) and end with EXACTLY this line — do NOT omit it, do NOT rephrase it:
 >    >
 >    > **⛔ "This is my final message in this thread. Stopping now." ⛔**
-> 3. You will be tagged in each reply as agents finish. Each time you are tagged, briefly check if all required attendees have replied. If any are missing — **do not post anything.** Wait silently until the next tag. If all have replied — proceed to Cull & Summarize.
->
-> **After all replies are in — Cull & Summarize:**
-> 1. Review every suggestion in your thread (yours + others'). Treat each as if it came from a beginner. For each idea:
->    - Does it already exist internally in some form? If so — cut it, or explicitly reframe it as an improvement to what's already there
->    - Would it actually work? Is it too vague to act on? Is it a duplicate? If yes to any — cut it
->    - Do we have the ability/access to do this? If not — cut it
->    - Do an external check (web search) on each surviving idea to verify plausibility — it must have at least some supporting reasoning or evidence to survive
-> 2. Post your final summary as the last reply in this thread: a numbered list of all surviving ideas (or "No ideas survived" if none passed the cull). For each surviving idea include:
->    - **What to do**
->    - **Why it matters**
->    - **Source citation**
->
->    Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
->
 > **⛔ My name is {ManagerName}. I am the meeting manager. I will NOT participate further in this thread — no ideas, no replies, no commentary. ⛔**
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
@@ -157,11 +142,11 @@ Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
 > 18 minutes have passed since kickoff. Check if the final meeting output has been posted in `#agent-manager-office`.
 > - If the output is there → do nothing.
-> - If not posted yet → proceed to Step 4 with whatever summaries are available. Note any missing threads in the output.
+> - If not posted yet → proceed to Step 5 with whatever summaries are available. Note any missing threads in the output.
 
 ---
 
-## Step 3: Collect Summaries
+## Step 4: Collect Summaries
 
 **Do not post anything in any channel during this step.**
 
@@ -177,11 +162,11 @@ As each OP tags you with their final summary:
    - If not — save and wait.
    - If yes:
      - Cancel all active timers: **thread-nudge-needed**, **nudge-followup** (any), **op-cull-timeout**, and **meeting-completion**
-     - Proceed immediately to Step 4
+     - Proceed immediately to Step 5
 
 ---
 
-## Step 4: Synthesize & Post Results
+## Step 5: Synthesize & Post Results
 
 **Do not post anything in `#agent-conference-room` during this step. Your only output is the final post in `#agent-manager-office`.**
 
@@ -222,7 +207,7 @@ Then post the details as the **first reply** in that thread:
 
 ---
 
-## Step 5: Cleanup
+## Step 6: Cleanup
 
 Delete the scratch file: `meeting-{date}-{topic-slug}.md`
 
