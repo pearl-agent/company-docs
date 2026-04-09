@@ -214,9 +214,28 @@ Then post the details as the **first reply** in that thread:
 
 ---
 
-## Step 6: Cleanup
+## Step 6: Vote
 
-Delete the scratch file: `meeting-{date}-{topic-slug}.md`
+Post a **new top-level message** in `#agent-conference-room`:
+
+> **Meeting Vote: {topic} — {date}**
+
+Then post the **first reply** in that thread, tagging all meeting attendees with real `<@>` tags:
+
+> <@{Attendee1SlackID}> <@{Attendee2SlackID}> <@{Attendee3SlackID}>
+>
+> Here are the surviving ideas from our meeting. Please do a **ranked choice vote** — reply with your top 3 in order of preference (1st, 2nd, 3rd choice).
+>
+> {paste the numbered list from Step 5 output here}
+>
+> Reply with your ranking like:
+> 1st: #3
+> 2nd: #7
+> 3rd: #1
+
+---
+
+## Step 7: Cleanup
 
 ---
 
