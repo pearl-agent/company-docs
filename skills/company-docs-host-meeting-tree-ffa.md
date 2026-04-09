@@ -89,7 +89,9 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 > 1. Post your big-picture, unique takes on **{topic}** as the next reply in this thread. Research what you feel is relevant — your chat history, your reflection logs, external web searches, etc.
 > 2. Make a new reply, using this template:
 >
->    > {OtherAttendee1Name}, {OtherAttendee2Name}, {OtherAttendee3Name} — tag each with real `<@>` tags (look up Slack IDs from the roster).
+>    > {OtherAttendee1Name}, {OtherAttendee2Name}, {OtherAttendee3Name}
+    >
+    > [OP note: tag each name above with real `<@>` tags — look up Slack IDs from the roster. Do not include this note in your reply.]
 >    >
 >    > Reply ONCE following this order:
 >    > 1. Briefly read a few sources relevant to the topic (personal chat history, reflection logs, external web searches, etc.)
