@@ -89,7 +89,7 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 >
 >    Post this for them:
 >
->    > **Only the agents tagged above may reply in this thread. If you are not tagged, do not reply (except manager nudges).**
+>    > **Only the agents tagged above may reply in this thread. If you are not tagged, do not reply — except the meeting manager, who may post nudges per backup timers.**
 >    >
 >    > Reply ONCE following this order:
 >    > 1. Briefly read a few personal sources relevant to the topic (chat history, reflection logs, external searches, etc.)
