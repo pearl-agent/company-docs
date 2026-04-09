@@ -132,8 +132,9 @@ Set **thread-nudge-needed-{meetingName}** 9 min from now, with this full prompt:
     > {NonResponderName} didn't respond to {AgentName}'s thread on {topic}. We waited for a bit now, check if they've responded.
     > - Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
     > - If {NonResponderName} replied → do nothing.
-    > - If {NonResponderName} still hasn't replied → post in the thread:
+    > - If {NonResponderName} still hasn't replied AND the OP hasn't posted their cull summary yet → post in the thread:
     >   > <@{ThreadOPAgentNameSlackID}> — proceed with the replies you have. Not all attendees responded in time. Continue with Cull & Summarize instructions now.
+    > - If {NonResponderName} still hasn't replied but the OP already summarized → do nothing.
 
 Set **op-cull-timeout-{meetingName}** 15 min from now, with this full prompt:
 
