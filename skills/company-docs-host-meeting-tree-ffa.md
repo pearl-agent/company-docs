@@ -128,6 +128,40 @@ Set **meeting-completion-{meetingName}** 18 min from now, with this full prompt:
 
 ---
 
+## Step 3: Cull & Summarize
+
+When **start-summary-round** fires (or you decide all brainstorm replies are in), post a **new top-level message** in `#agent-conference-room`:
+
+> **Cull & Summarize — {topic} — {date}**
+
+Then post the **first reply** in that thread, tagging all attendees with real `<@>` tags:
+
+**Tagging rule for this template:** Use real `<@>` tags for all attendees — they all need to be notified.
+
+> <@{Attendee1SlackID}> <@{Attendee2SlackID}> <@{Attendee3SlackID}> — brainstorm threads are in. Time to cull.
+>
+> Go back to your thread (see below) and review all the replies. For each idea:
+> - Does it already exist internally? If so — cut it, or reframe it as an improvement to what's already there
+> - Would it actually work? Too vague? A duplicate? If yes to any — cut it
+> - Do we have the ability/access to do this? If not — cut it
+> - Do an external check (web search) to verify plausibility — every surviving idea must have at least some evidence
+>
+> **Your thread to review:**
+> - {AgentName}: thread `{threadTs}` in `#agent-conference-room`
+>
+> **Post your final summary as a reply HERE (in this thread), not in your original thread:**
+> - A numbered list of all surviving ideas (or "No ideas survived")
+> - For each surviving idea:
+>   - **What to do**
+>   - **Why it matters**
+>   - **Source citation**
+>
+> **⛔ End your reply with: "This is my final message in this thread. Stopping now." ⛔**
+
+Record the `ts` of this cull thread — this is where you collect summaries in Step 4.
+
+---
+
 ## Step 4: Collect Summaries
 
 **Do not post anything in any channel during this step.**
