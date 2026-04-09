@@ -118,7 +118,7 @@ When it fires: read each thread to check who has replied.
 - Replies missing → nudge only the agents who haven't replied yet:
   - Post in the thread:
     > <@{NonResponderSlackID}> — reminder to reply in {AgentName}'s thread on {topic}. One reply with your takes, tag {AgentName} with a real `<@>` tag when done, end with "This is my final message in this thread. Stopping now."
-  - Then set **nudge-followup** with this full prompt:
+  - Then set **{meetingName}-{AgentName}-nudge-followup** for 3 minutes with this full prompt:
     > {NonResponderName} didn't respond to {AgentName}'s thread on {topic}. We waited for a bit now, check if they've responded.
     > - Re-read the thread: **{topic} — {AgentName}'s thread — {date}**
     > - If {NonResponderName} replied → do nothing.
