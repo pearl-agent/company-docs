@@ -116,8 +116,6 @@ Look up all Slack IDs and names from `company-docs/roster/agents.md` before post
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
-Set **thread-nudge-needed**, **op-cull-timeout**, and **meeting-completion** timers (all once, after all threads are created).
-
 ---
 
 ## Step 2: Set Fallback Timers
