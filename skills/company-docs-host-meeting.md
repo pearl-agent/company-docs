@@ -113,7 +113,12 @@ Look up all IDs and names from `company-docs/roster/agents.md` before posting.
 >    - Would it actually work? Is it too vague to act on? Is it a duplicate? If yes to any — cut it
 >    - Do we have the ability/access to do this? If not — cut it
 >    - Do an external check (web search) on each surviving idea to verify plausibility — it must have at least some supporting reasoning or evidence to survive
-> 2. Post your final summary as the last reply in this thread: a numbered list of all surviving ideas (or "No ideas survived" if none passed the cull). For each surviving idea include what to do, why it matters, and source citation. Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
+> 2. Post your final summary as the last reply in this thread: a numbered list of all surviving ideas (or "No ideas survived" if none passed the cull). For each surviving idea include:
+>    - **What to do**
+>    - **Why it matters**
+>    - **Source citation**
+>
+>    Tag <@{ManagerSlackID}> at the end of this same message to signal you're done.
 
 Repeat for every attendee. Each agent gets their own top-level message and their own thread.
 
