@@ -151,7 +151,7 @@ Set **calculate-vote-{meetingName}** 24 min from now, with this full prompt:
 > 9. #[num] — [title]
 > 10. #[num] — [title]
 >
-> **All other ideas (unranked):**
+> **All other ideas** (ranked if vote data available, otherwise unranked):
 > • #[num] — [title]
 > • #[num] — [title]
 > • _(repeat for all remaining)_
