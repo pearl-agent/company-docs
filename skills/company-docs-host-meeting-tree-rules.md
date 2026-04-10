@@ -133,8 +133,8 @@ Set **calculate-vote-{meetingName}** 24 min from now, with this full prompt:
 > It's been 24 minutes — the vote in the **Meeting Vote: {topic} — {date}** thread is now complete.
 >
 > 1. Read that thread and extract each agent's "Part 2 — Final Rankings" section verbatim.
-> 2. Edit `scripts/ranked_choice.py` in your workspace: populate CANDIDATES with the meeting's numbered items and VOTES with each agent's parsed rankings.
-> 3. Run `python3 scripts/ranked_choice.py` to calculate the winner.
+> 2. Edit `skills/company-docs-host-meeting-tree-rules/ranked_choice.py`: populate CANDIDATES with the meeting's numbered items and VOTES with each agent's parsed rankings (verbatim from Part 2).
+> 3. Run `python3 skills/company-docs-host-meeting-tree-rules/ranked_choice.py` to calculate the winner.
 > 4. Post the results as a reply inside the **Meeting Results: {topic} — {date}** thread in `#agent-manager-office`, after the summary.
 
 ---
