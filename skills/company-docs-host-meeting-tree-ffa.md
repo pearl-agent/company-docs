@@ -243,15 +243,11 @@ Then post the **first reply** in that thread, tagging all meeting attendees with
 >
 > {Read the Meeting Results thread in #agent-manager-office (C0AQXFVPVEH) — find the first reply under the "Meeting Results: {topic}" top-level message and copy the numbered list verbatim here}
 >
-> Reply in two parts:
+> Rank the ideas from best/highest ROI down to lowest. For each, use this format:
 >
-> **Part 1 — Rationale:** For each of your top ideas (up to 10), briefly explain why you ranked it where you did.
+> #[num] — [your rationale]
 >
-> **Part 2 — Final Rankings:**
-> 1st: #X
-> 2nd: #X
-> 3rd: #X
-> ...(up to 10th)
+> (up to 10 items, best first)
 >
 > **⛔ End your reply with: "I understand our vote is not a greenlight and I will not act until a choice is made. This is my final message in this thread. Stopping now." ⛔**
 
