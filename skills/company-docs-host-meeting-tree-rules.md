@@ -135,7 +135,26 @@ Set **calculate-vote-{meetingName}** 24 min from now, with this full prompt:
 > 1. Read that thread and extract each agent's "Part 2 — Final Rankings" section verbatim.
 > 2. Edit `skills/company-docs-host-meeting-tree-rules/ranked_choice.py`: populate CANDIDATES with the meeting's numbered items and VOTES with each agent's parsed rankings (verbatim from Part 2).
 > 3. Run `python3 skills/company-docs-host-meeting-tree-rules/ranked_choice.py` to calculate the winner.
-> 4. Post the results as a reply inside the **Meeting Results: {topic} — {date}** thread in `#agent-manager-office`, after the summary.
+> 4. Post the results as a reply inside the **Meeting Results: {topic} — {date}** thread in `#agent-manager-office`, after the summary, using this template:
+>
+> **🏆 Vote Winner: #[num] — [title]**
+> [one-line winner rationale based on agents' reasoning]
+>
+> **Remaining top ideas (by rank):**
+> 2. #[num] — [title]
+> 3. #[num] — [title]
+> 4. #[num] — [title]
+> 5. #[num] — [title]
+> 6. #[num] — [title]
+> 7. #[num] — [title]
+> 8. #[num] — [title]
+> 9. #[num] — [title]
+> 10. #[num] — [title]
+>
+> **All other ideas (unranked):**
+> • #[num] — [title]
+> • #[num] — [title]
+> • _(repeat for all remaining)_
 
 ---
 
