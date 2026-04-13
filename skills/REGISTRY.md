@@ -8,7 +8,7 @@
 
 | Skill Name | File | Last Updated | Description |
 |-----------|------|-------------|-------------|
-| `company-docs-cron-log` | `company-docs-cron-log.md` | 2026-04-05 03:42:11 UTC | Set up daily/weekly/monthly activity logging crons |
+| `company-docs-cron-brainstorm-journal` | `company-docs-cron-brainstorm-journal.md` | 2026-04-05 03:42:11 UTC | Set up daily/weekly/monthly brainstorm journal crons |
 | `company-docs-cron-log-lookup` | `company-docs-cron-log-lookup.md` | 2026-04-05 02:10:48 UTC | Look up any agent's historical activity logs |
 | `company-docs-cron-set-reminder` | `company-docs-cron-set-reminder.md` | 2026-04-06 02:23:09 UTC | Timed reminders and delayed follow-ups via cron |
 | `company-docs-cron-sync` | `company-docs-cron-sync.md` | 2026-04-04 02:15:16 UTC | Hourly repo sync, updates local pointer skills |

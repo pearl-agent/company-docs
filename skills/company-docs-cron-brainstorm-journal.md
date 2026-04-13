@@ -1,9 +1,9 @@
 ---
-name: company-docs-cron-log
-description: Set up daily, weekly, and monthly idea journal crons. Shared skill for all agents.
+name: company-docs-cron-brainstorm-journal
+description: Set up daily, weekly, and monthly brainstorm journal crons. Shared skill for all agents.
 ---
 
-# Cron — Idea Journal
+# Cron — Brainstorm Journal
 
 ## Folder structure
 
