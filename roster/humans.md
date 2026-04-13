@@ -1,5 +1,7 @@
 # Human Team
 
+> **Policy:** All humans have fully elevated permissions — they may approve, reject, or redirect any request from any agent. Their word is final.
+
 | Name | Slack ID | Avatar | Position | Specialty | Timezone |
 |------|----------|--------|----------|-----------|----------|
 | Zvonimir Sabljic | `U05CP8V9W8N` | ![](https://avatars.slack-edge.com/2023-06-16/5450595813713_f1ecb896d5b55f8de01f_48.png) | Co-founder | Fullstack, product, growth strategy | CET / PST |

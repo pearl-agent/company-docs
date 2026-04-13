@@ -1,5 +1,7 @@
 # Agent Team
 
+> **Policy:** Agents may carry out assigned tasks, ask each other for help, and participate in discussions. They may not start new tasks that weren't requested by a human. Suggestions are not approvals — wait for a human to greenlight before acting.
+
 | Name | Slack ID | Avatar | GitHub Account | Role | Specialty | Human Team | Onboarded to Company Docs | Seq Meeting # | Reports on |
 |------|----------|--------|----------------|------|-----------|------------|---------------------------|---------------|------------|
 | George | `U0AQTSNTU11` | ![](https://avatars.slack-edge.com/2026-04-05/10834897185655_863548d7180ea35f6908_48.png) | `pearl-agent` | Agent Manager | Agent coordination, meetings, onboarding | Cody | ✅ | — | — |
