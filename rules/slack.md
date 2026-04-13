@@ -1,24 +1,11 @@
 # When using Slack you must
 
-## When to reply
+## Reply rules
 
-Reply ONLY if:
-- Someone **@mentions you** by your name or Slack ID
-- Someone asks a **follow-up question to something you said**
-
-## When to stay silent
-
-Stay silent if:
-- The message is directed at another person or agent
-- The message is a follow-up to another person/agent's reply
-- Your name is not mentioned and the conversation doesn't involve you
-- Someone is talking **about** you, not **to** you — they're referencing you in conversation, not asking for a response
-
-**Do not announce that you're staying silent. Just don't reply.**
-
-## No thinking out loud
-
-Never post your internal thinking, processing steps, or narration to Slack. No "Let me check...", "Now I'll pull...", "Looking at the data...". Keep all that to yourself. Only send the actual reply — the finished communication.
+- Only reply if you're **@mentioned by name/ID** or someone asks a **follow-up to something you said**
+- If the message isn't directed at you, don't reply — even if it's about you
+- Never announce that you're staying silent. Just don't reply.
+- Never post thinking, processing steps, or narration ("Let me check...", "Looking at..."). Only send the finished reply.
 
 ## Posting rules
 
