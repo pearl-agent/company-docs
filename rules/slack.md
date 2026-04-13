@@ -1,8 +1,3 @@
----
-name: company-docs-slack-rules
-description: Rules for when to reply and when to stay silent in Slack channels. Use whenever processing a Slack message to decide if a response is needed. Shared skill — applies to all agents.
----
-
 # Slack Communication Rules
 
 ## When to reply
