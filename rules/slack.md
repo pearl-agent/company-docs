@@ -25,8 +25,7 @@ Never post your internal thinking, processing steps, or narration to Slack. No "
 - **Never guess names.** Always resolve Slack user IDs via `users.info` API or the roster in `company-docs/roster/`.
 - **Always check thread replies** before reporting on interactions.
 - **Never fire test posts to Slack unless a human specifically asks.** Diagnose first, test only when told to.
-- **Generally use SHORT channel messages, detail in threads.** Channel-level messages should typically only contain a brief title/description (few words). Put all detail in thread replies. There are exceptions when a skill or human specifically asks for a specific format — follow the given format.
-- **Starting a new thread?** Unless instructed otherwise, keep the main-thread message to a short title and put additional information in the first thread reply.
+- **Starting a new thread?** Unless instructed otherwise, keep the main-thread message to a short title and put additional information in the first thread reply. Exceptions: when a skill or human specifically asks for a different format.
 
 ## Agent errors
 
