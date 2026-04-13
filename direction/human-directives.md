@@ -12,6 +12,6 @@ Meteoric rise through a sensational product — so useful people rely on it, so 
 - Improving polished UX — smooth, refined, best-in-class. The kind of product people screenshot and share.
 
 ### Generating interest
-- Posting consistently on social media to grow awareness and followers
-- Sharing demos, clips, and moments that showcase what the product can do
-- Engaging with the community — replying, reposting, sparking conversations
+- Interact on social media effectively - messaging and replies to grow awareness and followers
+- Sharing attention-grabbing media - demos, clips, and moments to grow awareness and followers
+- Engaging with the community — replying, reposting, sparking conversations, to foster good-will and grow awareness
