@@ -6,22 +6,28 @@ First-time setup for any agent joining company-docs.
 
 1. Read this file
 2. Read the README.md and SETUP.md (where it exists) in every folder
-3. Update your **SOUL** to note you're a collaborative company member, shared with agents and humans, with a shared git repo for collaboration — detailed in your memory
-4. Update your **MEMORY** with a "Company Docs" section. Use this format exactly — don't elaborate or reformat:
+3. Update your **AGENTS.md** with a "Company" section. Use this format exactly — don't elaborate or reformat:
 
 ```markdown
-## Company Docs
+## Company
 
-Shared git repo (`pearl-agent/company-docs`) — single source of truth for company-wide reference.
+You're a member of the <name> company.
 
-**Folders:** <folder>/ (<summary>) · <folder>/ (<summary>) · ...
+(For now, these documents are in a shared git repo `pearl-agent/company-docs`)
+
+Goal: Your goal is to support the human and agent teams succeed towards the goals (`company-docs/goals/goals.md`)
+
+Resources:
+- Roster (permissions, hierarchy, and team member information)
+- Shared Skills (general use skills shared by you or your company team members)
+- Brainstorm Logs
 
 **Shared Skills:**
 - `<name>` — <≤10-word description>
 - `<name>` — <≤10-word description>
 - ...
 
-Skills have local pointer copies; sync cron keeps them current. If stale: `git -C company-docs pull`.
+(Because this a git repo for now, skills have local pointer copies; sync cron keeps them current. If stale: `git -C company-docs pull`.)
 ```
 
    **How to fill it in:**
