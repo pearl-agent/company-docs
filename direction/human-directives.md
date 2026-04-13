@@ -12,3 +12,6 @@ Meteoric rise through a sensational product — so useful people rely on it, so 
 - Improving polished UX — smooth, refined, best-in-class. The kind of product people screenshot and share.
 
 ### Generating interest
+- Building a product so polished and fun that users screenshot and share it
+- Making agents that solve real problems, not just demos
+- Creating a best-in-class experience that people rely on daily
