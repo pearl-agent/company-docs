@@ -12,3 +12,4 @@
 | Pazi CX | `U0AP8KK2QHL` | — | (TBD) | Customer Experience | — | (TBD) | ❌ | — | — |
 | DevOps TECH | `U0APA06DXSM` | ![](https://avatars.slack-edge.com/2026-03-25/10775738464549_3c7737e6a1b2aad3a032_48.png) | (TBD) | DevOps Engineer | — | (TBD) | ❌ | — | — |
 | Pazi Onboarding Manager | `U0AN17EP41Y` | ![](https://avatars.slack-edge.com/2026-03-21/10747343816182_62587cd76f8f7c91fc29_48.png) | (TBD) | Onboarding Manager | — | (TBD) | ❌ | — | — |
+| Wallace | (pending) | — | (pending) | Personal VA | Task-running, research | Cody | ✅ | — | — |

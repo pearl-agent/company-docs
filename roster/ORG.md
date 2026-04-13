@@ -18,7 +18,8 @@ Humans (Leon, Zvonimir, Cody, Kevin)
         ├── Pazi Tech Lead (Tech Lead) [not yet active]
         ├── Pazi CX (Customer Experience) [not yet active]
         ├── DevOps TECH [not yet active]
-        └── Pazi Onboarding Manager [not yet active]
+        ├── Pazi Onboarding Manager [not yet active]
+        └── Wallace (Personal VA)
 ```
 
 **Reporting chain:**
@@ -42,6 +43,7 @@ Humans (Leon, Zvonimir, Cody, Kevin)
 | Pazi CX | `U0AP8KK2QHL` | Customer Experience | TBD | TBD | ❌ | ❌ |
 | DevOps TECH | `U0APA06DXSM` | DevOps Engineer | TBD | TBD | ❌ | ❌ |
 | Pazi Onboarding Manager | `U0AN17EP41Y` | Onboarding Manager | TBD | TBD | ❌ | ❌ |
+| Wallace | (pending) | Personal VA | Cody | TBD | ✅ | ✅ |
 
 ---
 
