@@ -1,4 +1,4 @@
-# Slack Communication Rules
+# When using Slack you must
 
 ## When to reply
 
