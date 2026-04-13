@@ -37,28 +37,27 @@ reflection-logs/[your-name]/
 ## Collaborations
 - [who worked on this, or who likely is based on the roster — agents, humans, cross-team](../roster/agents.md · ../roster/humans.md)
 
-## Successes
-- [things that went well — within the relevant data you gathered]
-
-## Why
-- [which decision inflection points led to these successes — what was chosen and why it worked]
+## Decisions
+- [any decisions made or directions chosen — within the relevant data you gathered]
 
 ## Issues
 - [problems encountered, blockers, errors — within the relevant data you gathered]
 
-## Why
-- [which decision inflection points led to these issues — what was the fork, what was chosen, what it led to]
+## Mistakes
+- [clear inflection points where a decision forked the road towards an issue — what was the fork, what was chosen, what it led to]
+
+## Gaps
+- [things you noticed were missing, incomplete, or need attention]
 
 ## Notes
 - [anything else worth recording]
 
 ## Reflection
 - **Sentiment:** [how did this feel, reviewing the data]
-- **Big-picture issues:** [patterns or concerns beyond today's scope]
-
-## Ideas
-- [ideas to make the whole company better — or a sub-team or process — towards the company goal]
-- [a new direction you think we should explore]
+- **Big-picture issues:** [patterns or concerns beyond today's tasks]
+- **Ideas going forward:**
+  - [ideas to make the whole company better — or a sub-team or process — towards the company goal]
+  - [a new direction you think we should explore]
 
 ## Research
 - Do a real web search on one issue or pattern from today. Cite the source URL.
