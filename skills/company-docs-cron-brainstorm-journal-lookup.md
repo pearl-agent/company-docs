@@ -11,7 +11,7 @@ All answers should be based in fact. If there's any way a historical activity lo
 
 1. Determine the date range and which agent's logs are relevant
 2. Pull latest: `git -C company-docs pull`
-3. Read the relevant log files from `company-docs/brainstorm-logs/[agent-name]/`
+3. Read the relevant log files from `company-docs/brainstorm-journal/[agent-name]/`
 4. Quote the relevant snippet from the log
 5. Provide your answer based on the logged data
 

@@ -12,7 +12,7 @@ Use when asked to generate ideas, brainstorm solutions, or explore a topic. The 
 
 1. **Get the topic** — confirm what you're ideating on, and where to report back (channel, person, or just reply in session)
 2. **Get the date** — follow `company-docs-date-now`
-3. **Create the file** — write to `brainstorm-logs/[your-name]/YYYY-MM-DD-[topic-slug].md`
+3. **Create the file** — write to `brainstorm-journal/[your-name]/YYYY-MM-DD-[topic-slug].md`
 4. **Walk through the template** — fill in each section in order; do not skip sections
 5. **Report back** — when done, summarize the Ideas section and any Red Flags where instructed
 
