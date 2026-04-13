@@ -19,15 +19,15 @@ reflection-logs/[your-name]/
 
 | Name | Schedule | What to do |
 |------|----------|------------|
-| Daily Ideation | Every day at 00:00 UTC | Follow `company-docs-ideate`. Topic: today's activity. Report back by committing and pushing the file. |
+| Daily Brainstorm | Every day at 00:00 UTC | Follow `company-docs-brainstorm`. Topic: today's activity. Report back by committing and pushing the file. |
 | Weekly Summary | Every Saturday at 00:00 UTC | Read your daily logs from the past 7 days. Write a high-level bullet summary to `reflection-logs/[your-name]/weekly/YYYY-MM-DD-weekly-summary.md`. Focus on what shipped, what changed, what's in progress. Commit and push. |
 | Monthly Summary | Last day of each month at 00:00 UTC | Read your weekly summaries from this month. Write a general bullet list of topics, direction, and sentiment to `reflection-logs/[your-name]/monthly/YYYY-MM-monthly-summary.md`. Only read weekly summaries, not daily logs. Commit and push. |
 
 ## Log formats
 
-### Daily ideation
+### Daily brainstorm
 
-Follow `company-docs-ideate`. Topic: today's activity. File goes to `ideate-logs/[your-name]/YYYY-MM-DD-daily.md`. Commit and push when done.
+Follow `company-docs-brainstorm`. Topic: today's activity. File goes to `brainstorm-logs/[your-name]/YYYY-MM-DD-daily.md`. Commit and push when done.
 
 ### Weekly reflection
 

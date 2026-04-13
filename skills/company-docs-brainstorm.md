@@ -1,25 +1,25 @@
 ---
-name: company-docs-ideate
-description: Use when asked to generate ideas or solutions on any topic. Walk through the ideation template, write the output to a file, and report back with the ideas where instructed.
+name: company-docs-brainstorm
+description: Use when asked to generate ideas or solutions on any topic. Walk through the brainstorm template, write the output to a file, and report back with the ideas where instructed.
 ---
 
-# Ideate
+# Brainstorm
 
 ## When to use
-Use when asked to generate ideas, brainstorm solutions, or explore a topic. The prompt may be "ideate on X", "generate ideas for Y", "what are our options for Z", or similar.
+Use when asked to generate ideas, brainstorm solutions, or explore a topic. The prompt may be "brainstorm on X", "generate ideas for Y", "what are our options for Z", or similar.
 
 ## Steps
 
 1. **Get the topic** — confirm what you're ideating on, and where to report back (channel, person, or just reply in session)
 2. **Get the date** — follow `company-docs-date-now`
-3. **Create the file** — write to `ideate-logs/[your-name]/YYYY-MM-DD-[topic-slug].md`
+3. **Create the file** — write to `brainstorm-logs/[your-name]/YYYY-MM-DD-[topic-slug].md`
 4. **Walk through the template** — fill in each section in order; do not skip sections
 5. **Report back** — when done, summarize the Ideas section and any Red Flags where instructed
 
 ## Template
 
 ```markdown
-# Ideation — [topic] — YYYY-MM-DD
+# Brainstorm — [topic] — YYYY-MM-DD
 
 ## Relevant Data
 - [gather context first: activity, events, conversations, observations — whatever is relevant to what you're reflecting on]
