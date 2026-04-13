@@ -55,8 +55,9 @@ Use when asked to generate ideas, brainstorm solutions, or explore a topic. The 
 - Skip if nothing worth searching
 
 ## Research reflection
-- These are unverified external ideas — carefully evaluate if they actually apply to our situation.
-- [Does this apply? Why or why not?]
+- These are unverified external ideas — evaluate each one against what we actually do.
+- [Does this apply to our product? Does this apply to our team? Why or why not?]
+- Be specific per search — clearly state its applicability or lack thereof. If we already do it, say so.
 
 ## Ideas
 - [suggested applications — specific ways the research could apply to our situation, towards the company goal](../direction/human-directives.md)
