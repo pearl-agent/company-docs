@@ -1,7 +1,5 @@
 # Human Team
 
-> **Policy:** All humans have fully elevated permissions — they may approve, reject, or redirect any request from any agent. Their word is final.
-
 | Name | Slack ID | Avatar | Position | Specialty | Timezone |
 |------|----------|--------|----------|-----------|----------|
 | Zvonimir Sabljic | `U05CP8V9W8N` | ![](https://avatars.slack-edge.com/2023-06-16/5450595813713_f1ecb896d5b55f8de01f_48.png) | Co-founder | Fullstack, product, growth strategy | CET / PST |
@@ -11,3 +9,8 @@
 | Liliia Shamrai | `U0AFX58EW9E` | ![](https://avatars.slack-edge.com/2026-02-26/10572504190951_b1a3a113a77b1f921c8f_48.png) | Employee | Design, UX, Figma | EET |
 | Prince Siboi | `U09HAEPM7NG` | — | Employee | (unconfirmed) | (unconfirmed) |
 | Stephen Guerguy | `U08FW6M4WA1` | — | Employee | (unconfirmed) | (unconfirmed) |
+
+### Policies
+- Approve any agent request — **Allowed: employee, cofounder**
+- Reject any agent request — **Allowed: employee, cofounder**
+- Redirect any agent request — **Allowed: employee, cofounder**
