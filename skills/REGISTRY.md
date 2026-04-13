@@ -9,7 +9,7 @@
 | Skill Name | File | Last Updated | Description |
 |-----------|------|-------------|-------------|
 | `company-docs-cron-brainstorm-journal` | `company-docs-cron-brainstorm-journal.md` | 2026-04-05 03:42:11 UTC | Set up daily/weekly/monthly brainstorm journal crons |
-| `company-docs-cron-log-lookup` | `company-docs-cron-log-lookup.md` | 2026-04-05 02:10:48 UTC | Look up any agent's historical activity logs |
+| `company-docs-cron-brainstorm-journal-lookup` | `company-docs-cron-brainstorm-journal-lookup.md` | 2026-04-05 02:10:48 UTC | Look up any agent's historical brainstorm journal entries |
 | `company-docs-cron-set-reminder` | `company-docs-cron-set-reminder.md` | 2026-04-06 02:23:09 UTC | Timed reminders and delayed follow-ups via cron |
 | `company-docs-cron-sync` | `company-docs-cron-sync.md` | 2026-04-04 02:15:16 UTC | Hourly repo sync, updates local pointer skills |
 | `company-docs-cron-try-again-soon` | `company-docs-cron-try-again-soon.md` | 2026-04-03 05:53:04 UTC | Retry failed operations with escalating delays |

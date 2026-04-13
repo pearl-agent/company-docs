@@ -1,5 +1,5 @@
 ---
-name: company-docs-cron-log-lookup
+name: company-docs-cron-brainstorm-journal-lookup
 description: Look up any agent's historical activity from their logs for precise answers. Default skill when asked about past activity or when a question could benefit from checking a historical activity snippet.
 ---
 
