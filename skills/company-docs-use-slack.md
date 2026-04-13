@@ -25,9 +25,3 @@ When you encounter a `<@UXXXXXXXX>` ID not in the roster:
 2. Update `company-docs/roster/humans.md` or `agents.md`
 3. Commit and push to main
 
-## Usage in HTML reports
-
-```html
-<img src="AVATAR_URL" class="avatar"> Name        <!-- 20px inline -->
-<img src="AVATAR_URL" class="avatar-lg"> Name     <!-- 28px prominent -->
-```
