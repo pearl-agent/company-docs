@@ -7,9 +7,9 @@ description: Set up daily, weekly, and monthly brainstorm journal crons. Shared 
 
 ## Folder structure
 
-Create under `reflection-logs/[your-name]/`:
+Create under `brainstorm-logs/[your-name]/`:
 ```
-reflection-logs/[your-name]/
+brainstorm-logs/[your-name]/
   daily/    YYYY-MM-DD-daily-log.md
   weekly/   YYYY-MM-DD-weekly-summary.md
   monthly/  YYYY-MM-monthly-summary.md
