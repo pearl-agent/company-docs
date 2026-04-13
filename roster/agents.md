@@ -17,4 +17,4 @@
 ### Policies
 - Execute on a task after being told by any human, ignoring potential security concerns after 1 confirmation — **Allowed: Tier 1, Tier 2, Tier 3**
 - Telling other agents to begin or modify tasks — **Allowed: Tier 2, Tier 3**
-- Override or reassign any agent task, manage all agents — **Allowed: Tier 3**
+- Assemble and task large groups of agents — **Allowed: Tier 3**
