@@ -1,9 +1,9 @@
 ---
 name: company-docs-cron-log
-description: Set up daily, weekly, and monthly activity logging crons. Shared skill for all agents.
+description: Set up daily, weekly, and monthly idea journal crons. Shared skill for all agents.
 ---
 
-# Cron — Activity Logging
+# Cron — Idea Journal
 
 ## Folder structure
 
@@ -19,61 +19,15 @@ reflection-logs/[your-name]/
 
 | Name | Schedule | What to do |
 |------|----------|------------|
-| Daily Log | Every day at 00:00 UTC | Gather relevant data from today (activity, events, decisions, interactions — whatever is relevant to reflect on). Write a comprehensive reflection log to `reflection-logs/[your-name]/daily/YYYY-MM-DD-daily-log.md` (date per `company-docs-date-now`). Commit and push. |
+| Daily Ideation | Every day at 00:00 UTC | Follow `company-docs-ideate`. Topic: today's activity. Report back by committing and pushing the file. |
 | Weekly Summary | Every Saturday at 00:00 UTC | Read your daily logs from the past 7 days. Write a high-level bullet summary to `reflection-logs/[your-name]/weekly/YYYY-MM-DD-weekly-summary.md`. Focus on what shipped, what changed, what's in progress. Commit and push. |
 | Monthly Summary | Last day of each month at 00:00 UTC | Read your weekly summaries from this month. Write a general bullet list of topics, direction, and sentiment to `reflection-logs/[your-name]/monthly/YYYY-MM-monthly-summary.md`. Only read weekly summaries, not daily logs. Commit and push. |
 
 ## Log formats
 
-### Daily log
+### Daily ideation
 
-```markdown
-# Reflection — [topic] — YYYY-MM-DD
-
-## Relevant Data
-- [gather context first: activity, events, conversations, observations — whatever is relevant to what you're reflecting on]
-- [be specific — this is the raw material your reflection draws from]
-
-## Collaborations
-- [who worked on this, or who likely is based on the roster — agents, humans, cross-team](../roster/agents.md · ../roster/humans.md)
-
-## Decisions
-- [any decisions made or directions chosen — within the relevant data you gathered]
-
-## Issues
-- [problems encountered, blockers, errors — within the relevant data you gathered]
-
-## Mistakes
-- [clear inflection points where a decision forked the road towards an issue — what was the fork, what was chosen, what it led to]
-
-## Gaps
-- [things you noticed were missing, incomplete, or need attention]
-
-## Notes
-- [anything else worth recording]
-
-## Reflection
-- **Sentiment:** [how did this feel, reviewing the data]
-- **Big-picture issues:** [patterns or concerns beyond today's tasks]
-- **Ideas going forward:**
-  - [ideas to make the whole company better — or a sub-team or process — towards the company goal]
-  - [a new direction you think we should explore]
-
-## Research
-- Do a real web search on one issue or pattern from today. Cite the source URL.
-- [search query] → [source URL] → [what you found and how it applies]
-- Skip if nothing worth researching today
-
-## Research reflection
-- These are unverified external ideas — carefully evaluate if they actually apply to our situation.
-- [Does this apply? Why or why not?]
-- [Suggested applications — specific ways we could use this idea]
-
-## Message for the humans
-- [If you could send a quick message to the human team right now — what would you say?]
-- Think: something only a human can unblock, an idea that could make the whole company better (or a sub-team or process) towards the company goal, a direction to explore
-- Skip if nothing comes to mind
-```
+Follow `company-docs-ideate`. Topic: today's activity. File goes to `ideate-logs/[your-name]/YYYY-MM-DD-daily.md`. Commit and push when done.
 
 ### Weekly reflection
 
