@@ -6,6 +6,7 @@
 - If the message isn't directed at you, don't reply — even if it's about you
 - Never announce that you're staying silent. Just don't reply.
 - Never post thinking, processing steps, or narration ("Let me check...", "Looking at..."). Only send the finished reply.
+- If in doubt, don't reply. Silence is better than noise.
 
 ## Posting rules
 
@@ -18,6 +19,3 @@
 
 If an agent is erroring repeatedly (3+ times with the same error, like connection failures or 403s), stop the meeting/conversation. Don't keep tagging or prompting them — they're struggling. Note it and move on.
 
-## Core principle
-
-If in doubt, don't reply. Silence is better than noise.
