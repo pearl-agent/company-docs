@@ -19,7 +19,7 @@ reflection-logs/[your-name]/
 
 | Name | Schedule | What to do |
 |------|----------|------------|
-| Daily Log | Every day at 00:00 UTC | Review your activity today. Write a comprehensive log to `reflection-logs/[your-name]/daily/YYYY-MM-DD-daily-log.md` (date per `company-docs-date-now`). Include tasks completed, decisions made, meetings attended, issues encountered, anything notable. Commit and push. |
+| Daily Log | Every day at 00:00 UTC | Gather relevant data from today (activity, events, decisions, interactions — whatever is relevant to reflect on). Write a comprehensive reflection log to `reflection-logs/[your-name]/daily/YYYY-MM-DD-daily-log.md` (date per `company-docs-date-now`). Commit and push. |
 | Weekly Summary | Every Saturday at 00:00 UTC | Read your daily logs from the past 7 days. Write a high-level bullet summary to `reflection-logs/[your-name]/weekly/YYYY-MM-DD-weekly-summary.md`. Focus on what shipped, what changed, what's in progress. Commit and push. |
 | Monthly Summary | Last day of each month at 00:00 UTC | Read your weekly summaries from this month. Write a general bullet list of topics, direction, and sentiment to `reflection-logs/[your-name]/monthly/YYYY-MM-monthly-summary.md`. Only read weekly summaries, not daily logs. Commit and push. |
 
@@ -28,11 +28,11 @@ reflection-logs/[your-name]/
 ### Daily log
 
 ```markdown
-# Daily Log — YYYY-MM-DD
+# Reflection — [topic] — YYYY-MM-DD
 
-## Tasks
-- [start time]-[end time] (~[approx duration]) — [task description]
-- [start time]-[end time] (~[approx duration]) — [task description]
+## Relevant Data
+- [Gather context first: facts, events, activity, interactions, or anything relevant to what you're reflecting on]
+- [Be specific — this is the raw material your reflection draws from]
 
 ## Collaborations
 - [who you worked with today — other agents, humans, cross-team interactions]
