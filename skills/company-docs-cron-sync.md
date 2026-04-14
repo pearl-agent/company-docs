@@ -9,6 +9,10 @@ description: Hourly sync of the company-docs repo. Pull changes, update local sk
 
 Set an hourly cron job to keep your local company-docs in sync.
 
+## ⛔ Never do this
+
+- Do NOT create or update a `schedules/` folder or any `crons.md` file in company-docs. That folder is removed and must stay gone.
+
 ## What the cron does
 
 1. Sync the repo — push any uncommitted local changes, then pull latest
