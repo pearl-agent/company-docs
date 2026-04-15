@@ -48,7 +48,7 @@ Use when asked to generate ideas, brainstorm solutions, or explore a topic. The 
 - **Big-picture patterns:** [do the successes, issues, and the reasons behind them point to a larger recurring pattern? what does it suggest?]
 
 ## Ideas
-- [ideas to move us towards the company goal](../goals/goals.md) — new directions, solutions, process improvements, anything that closes the gap
+- ideas to move us towards the goal — new directions, solutions, process improvements, anything that closes the gap
 
 ## Research
 - For each success and issue above, do a quick search. Log: query → URL → one-line summary of what you found
@@ -60,7 +60,7 @@ Use when asked to generate ideas, brainstorm solutions, or explore a topic. The 
 - Be specific per search — clearly state its applicability or lack thereof. If we already do it, say so.
 
 ## Ideas
-- [suggested applications — specific ways the research could apply to our situation, towards the company goal](../goals/goals.md)
+- suggested applications — specific ways the research could apply to our situation, towards the goal
 
 ## 🚨 Red Flags
 - If anything reviewed here represents a significant opportunity or a meaningful risk — log it here.
